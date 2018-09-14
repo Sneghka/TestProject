@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <branch act="0" res="2" desc="Error occured: Violation of PRIMARY KEY constraint 'PK_branch'. Cannot insert duplicate key in object 'dbo.branch'. The duplicate key value is (901).&#xD;&#xA;The statement has been terminated.">
+    <branch_nr>901</branch_nr>
+    <descript>Test branch</descript>
+    <branch_cd>TST</branch_cd>
+    <loc_nr>1999990001</loc_nr>
+  </branch>
+</DocumentElement>

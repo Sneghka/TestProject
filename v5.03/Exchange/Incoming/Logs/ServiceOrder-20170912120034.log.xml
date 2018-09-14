@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <ServiceOrder act="0" res="0" desc="Added successfully.">
+    <Order_ID>JG12092017</Order_ID>
+    <Cus_nr>3000005788</Cus_nr>
+    <Service_Date>2017-09-12 00:00:00</Service_Date>
+    <Order_Type>2</Order_Type>
+    <Order_Level>1</Order_Level>
+    <WP_ServiceType_Code>COLL</WP_ServiceType_Code>
+    <WP_loc_nr>3000000026</WP_loc_nr>
+    <WP_ref_loc_nr>JG02</WP_ref_loc_nr>
+    <WP_branch_cd>JG</WP_branch_cd>
+    <WP_CurrencyCode>EUR</WP_CurrencyCode>
+    <WP_DateCreated>2017-09-12 00:00:00</WP_DateCreated>
+    <WP_DateUpdated>2017-09-12 12:00:35</WP_DateUpdated>
+    <WP_GenericStatus>1</WP_GenericStatus>
+    <WP_Order_ID>3000021620</WP_Order_ID>
+  </ServiceOrder>
+</DocumentElement>

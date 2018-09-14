@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <location act="1">
+    <abbrev>11019227</abbrev>
+    <ref_loc_nr>11019227</ref_loc_nr>
+    <loc_nr>9900000025</loc_nr>
+    <cus_nr>3303</cus_nr>
+    <branch_nr>1</branch_nr>
+    <name>Auto Test Location Edited</name>
+    <lctyp_cd>NOR</lctyp_cd>
+    <enabled>false</enabled>
+    <!--<ltCode></ltCode>-->
+  </location>
+</DocumentElement>

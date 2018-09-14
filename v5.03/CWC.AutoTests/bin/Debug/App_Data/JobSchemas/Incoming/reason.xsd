@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="reason" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="reason">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="reason_cd" type="xs:int" minOccurs="0" />
+              <xs:element name="descript" type="xs:string" minOccurs="0" />
+              <xs:element name="code_type" type="xs:int" minOccurs="0" />
+              <xs:element name="action" type="xs:string" minOccurs="0" />
+              <xs:element name="cat_nr" type="xs:int" minOccurs="0" />
+              <xs:element name="customer_responsible" type="xs:boolean" minOccurs="0" />
+              <xs:element name="send_to_scanner" type="xs:boolean" minOccurs="0" />
+              <xs:element name="startDate" type="xs:string" minOccurs="0" />
+              <xs:element name="enddate" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+            <xs:attribute name="act" type="xs:int" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//reason" />
+        <xs:field xpath="code_type" />
+        <xs:field xpath="reason_cd" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <customer act="0" res="0" desc="Added successfully.">
+    <abbrev>AUTOTEST01</abbrev>
+    <csgrp_cd>TEST</csgrp_cd>
+    <cus_nr>3000006083</cus_nr>
+    <name>Test Customer 01</name>
+    <area_pc />
+    <det_pc />
+    <enabled>1</enabled>
+    <ReferenceNumber>11019711</ReferenceNumber>
+    <WP_RecordType>0</WP_RecordType>
+    <PreferredLanguage>1</PreferredLanguage>
+  </customer>
+</DocumentElement>

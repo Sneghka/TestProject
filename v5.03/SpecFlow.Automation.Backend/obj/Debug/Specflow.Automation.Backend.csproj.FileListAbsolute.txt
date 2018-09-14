@@ -1,0 +1,1 @@
+D:\TFS\Test_5.03\v5.03\SpecFlow.Automation.Backend\obj\Debug\Specflow.Automation.Backend.csprojResolveAssemblyReference.cache

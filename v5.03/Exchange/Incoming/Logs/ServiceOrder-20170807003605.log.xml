@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Error>
+    <FileName>ServiceOrder-20170807003605.xml</FileName>
+    <Date>2017-08-07T00:36:05.9401815+03:00</Date>
+    <Message>Specified cast is not valid.</Message>
+    <FullText>System.InvalidCastException: Specified cast is not valid.
+   at Cwc.Ordering.Service.OrderService.LoadOrders(String[] ids, DataBaseParams dbParams) in c:\TeamcityBuilds\v05.03\Src\Cwc.Ordering\Services\Order\OrderService.cs:line 1717
+   at Cwc.Ordering.Sync.ServiceOrderSyncAction.BeforeUpdate(DataRow row, SqlCommand cmd, StatementType statementType, UpdateStatus updateStatus) in c:\TeamcityBuilds\v05.03\Src\Cwc.Ordering\Ordering\Sync\ServiceOrderSyncAction.cs:line 205
+   at Cwc.Sync.DefaultSyncMapper.OnRowUpdating(Object sender, SqlRowUpdatingEventArgs e) in c:\TeamcityBuilds\v05.03\Src\Cwc.Sync\Classes\DefaultSyncMapper.cs:line 721
+   at Cwc.Ordering.Sync.ServiceOrderSyncMapper.OnRowUpdating(Object sender, SqlRowUpdatingEventArgs e) in c:\TeamcityBuilds\v05.03\Src\Cwc.Ordering\Ordering\Sync\ServiceOrderSyncMapper.cs:line 260
+   at System.Data.SqlClient.SqlDataAdapter.OnRowUpdating(RowUpdatingEventArgs value)
+   at System.Data.Common.DbDataAdapter.Update(DataRow[] dataRows, DataTableMapping tableMapping)
+   at System.Data.Common.DbDataAdapter.UpdateFromDataTable(DataTable dataTable, DataTableMapping tableMapping)
+   at System.Data.Common.DbDataAdapter.Update(DataTable dataTable)
+   at Cwc.Sync.DefaultSyncMapper.PerformImport(DataTable table, SqlTransaction tran, ISyncAction action) in c:\TeamcityBuilds\v05.03\Src\Cwc.Sync\Classes\DefaultSyncMapper.cs:line 690
+   at Cwc.Sync.DefaultSyncMapper.Import(DataTable table, Boolean isEnableIncomingLog, Boolean isIncomingLogOnlyPrimaryKey, Object[] logData, Int32&amp; totalRowCount, Int32&amp; errorRowCount, Boolean&amp; isError, SqlTransaction tran, Int32 logFileIndex) in c:\TeamcityBuilds\v05.03\Src\Cwc.Sync\Classes\DefaultSyncMapper.cs:line 198
+   at Cwc.Ordering.Sync.ServiceOrderSyncMapper.Import(DataTable table, Boolean isEnableIncomingLog, Boolean isIncomingLogOnlyPrimaryKey, Object[] logData, Int32&amp; totalRowCount, Int32&amp; errorRowCount, Boolean&amp; isError, SqlTransaction tran, Int32 logFileIndex) in c:\TeamcityBuilds\v05.03\Src\Cwc.Ordering\Ordering\Sync\ServiceOrderSyncMapper.cs:line 191
+   at Cwc.Sync.SyncService.ImportInternal(Object xmlData, String xsdFileName, Boolean saveLogFiles, Boolean onlyPrimaryKeyInLogFiles, Object[] logData, Boolean isFiles, String xmlFileName, FileFormat fileFormat, Nullable`1 fileSize, ISyncMapper mapper, Boolean enableLog, Int32 jobInstanceID) in c:\TeamcityBuilds\v05.03\Src\Cwc.Sync\Service\SyncService.cs:line 162</FullText>
+  </Error>
+</DocumentElement>

@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<references>
+  <reference parentTable="WP_BaseData_PersonRole" childTable="WP_BaseData_PersonLocation">
+    <column parent="id" child="PersonRoleID"/>
+  </reference>
+  <reference parentTable="WP_BaseData_PersonRole" childTable="WP_BaseData_PersonCustomer">
+    <column parent="id" child="PersonRoleID"/>
+  </reference>
+
+  <reference parentTable="WP_BaseData_Person" childTable="WP_BaseData_PersonLocation">
+    <column parent="id" child="PersonID"/>
+  </reference>
+  <reference parentTable="WP_BaseData_Person" childTable="WP_BaseData_PersonCustomer">
+    <column parent="id" child="PersonID"/>
+  </reference>
+
+  <reference parentTable="MaterialType" childTable="WP_BaseData_ProductionMachineMaterialTypeLink">
+    <column parent="matTypeCode" child="MaterialTypeCode"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_BaseData_ProductionMachineProductLink">
+    <column parent="ProductCode" child="ProductCode"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_CashCenter_ProcessSetting_Product_Link">
+    <column parent="ProductCode" child="ProductCode"/>
+  </reference>
+  <reference parentTable="Product" childTable="Cwc_Feedings_MapperAlternativeProductSetting">
+    <column parent="WP_id" child="ProductID"/>
+  </reference>
+  <reference parentTable="Product" childTable="Cwc_Feedings_MapperAlternativeProductSetting">
+    <column parent="WP_id" child="AlternativeProductID"/>
+  </reference>
+  <reference parentTable="branch" childTable="location">
+    <column parent="branch_nr" child="CoinsSiteID"/>
+  </reference>
+  <reference parentTable="branch" childTable="location">
+    <column parent="branch_nr" child="NotesSiteID"/>
+  </reference>
+  <reference parentTable="branch" childTable="WP_BaseData_DayClosureHistory">
+    <column parent="branch_nr" child="SiteID"/>
+  </reference>
+  <reference parentTable="WP_CashCenter_StockLocationType" childTable="WP_CashCenter_StockLocationSetting">
+    <column parent="id" child="StockLocationTypeID"/>
+  </reference>
+  <reference parentTable="WP_CashCenter_StockLocationType" childTable="WP_CashCenter_StockLocation">
+    <column parent="id" child="StockLocationTypeID"/>
+  </reference>
+  <reference parentTable="WP_BaseData_Workstation" childTable="WP_BaseData_ProductionMachine">
+    <column parent="id" child="WorkstationID"/>
+  </reference>
+  <reference parentTable="WP_BaseData_Workstation" childTable="WP_BaseData_DayClosureHistory">
+    <column parent="id" child="WorkstationID"/>
+  </reference>
+  <reference parentTable="WP_BaseData_Workstation" childTable="Cwc_Security_AuthorizationHistoryLog">
+    <column parent="id" child="WorkstationID"/>
+  </reference>
+  <reference parentTable="WP_BaseData_Workstation" childTable="WP_CashCenter_ProcessingSession">
+    <column parent="id" child="WorkstationID"/>
+  </reference>
+  <reference parentTable="WP_BaseData_Workstation" childTable="WP_CashManagementEvent">
+    <column parent="id" child="WorkstationID"/>
+  </reference>
+  <reference parentTable="WP_BaseData_Workstation" childTable="Cwc_Transport_CitProcessingHistory">
+    <column parent="id" child="WorkstationID"/>
+  </reference>
+  <reference parentTable="WP_CashCenter_SiteSetting" childTable="WP_CashCenter_ContainersBatch">
+    <column parent="CustomerId" child="StockOwnerID"/>
+  </reference>
+  <reference parentTable="WP_BaseData_CodeFormat" childTable="WP_CashCenter_SiteSetting">
+    <column parent="id" child="NumberFormatID"/>
+  </reference>
+  <reference parentTable="WP_BaseData_CodeFormat" childTable="WP_CashCenter_SiteSetting">
+    <column parent="id" child="PermanentNumberFormatID"/>
+  </reference>
+  <reference parentTable="WP_BaseData_CodeFormat" childTable="WP_CashCenter_ProcessSettingBarcodeFormatLink">
+    <column parent="id" child="BarcodeFormatID"/>
+  </reference>
+  <reference parentTable="WP_BaseData_CodeFormat" childTable="WP_BaseData_CustomerReferenceSetting">
+    <column parent="id" child="CodeFormatID"/>
+  </reference>
+  <reference parentTable="User" childTable="WP_BaseData_PersonLocation">
+    <column parent="id" child="EditorID"/>
+  </reference>
+  <reference parentTable="User" childTable="WP_BaseData_PersonLocation">
+    <column parent="id" child="AuthorID"/>
+  </reference>
+  <reference parentTable="User" childTable="WP_BaseData_PersonCustomer">
+    <column parent="id" child="EditorID"/>
+  </reference>
+  <reference parentTable="User" childTable="WP_BaseData_PersonCustomer">
+    <column parent="id" child="AuthorID"/>
+  </reference>
+  <reference parentTable="User" childTable="WP_BaseData_ProductionMachine">
+    <column parent="id" child="AuthorID"/>
+  </reference>
+  <reference parentTable="User" childTable="WP_BaseData_ProductionMachine">
+    <column parent="id" child="EditorID"/>
+  </reference>
+  <reference parentTable="User" childTable="WP_BaseData_DayClosureHistory">
+    <column parent="id" child="AuthorID"/>
+  </reference>
+  <reference parentTable="User" childTable="WP_CashCenter_HeaderCard">
+    <column parent="id" child="AuthorID"/>
+  </reference>
+  <reference parentTable="User" childTable="WP_CashCenter_HeaderCard">
+    <column parent="id" child="EditorID"/>
+  </reference>
+  <reference parentTable="User" childTable="WP_CashCenter_StockLocationSetting">
+    <column parent="id" child="AuthorID"/>
+  </reference>
+  <reference parentTable="User" childTable="WP_CashCenter_StockLocationSetting">
+    <column parent="id" child="EditorID"/>
+  </reference>
+  <reference parentTable="User" childTable="WP_CashCenter_StockPosition">
+    <column parent="id" child="Author_id"/>
+  </reference>
+  <reference parentTable="User" childTable="WP_CashCenter_StockPosition">
+    <column parent="id" child="Editor_id"/>
+  </reference>
+  <reference parentTable="User" childTable="WP_CashCenter_StockOrder">
+    <column parent="id" child="Author_id"/>
+  </reference>
+  <reference parentTable="User" childTable="WP_CashCenter_StockOrder">
+    <column parent="id" child="Editor_id"/>
+  </reference>
+  <reference parentTable="User" childTable="WP_CashCenter_ProcessSetting">
+    <column parent="id" child="AuthorId"/>
+  </reference>
+  <reference parentTable="User" childTable="WP_CashCenter_ProcessSetting">
+    <column parent="id" child="EditorId"/>
+  </reference>
+  <reference parentTable="WP_Asset" childTable="WP_MaintenanceOrder">
+    <column parent="id" child="Asset_id"/>
+  </reference>
+  <reference parentTable="WP_Asset" childTable="WP_Asset">
+    <column parent="AssetID" child="PartOf_AssetID"/>
+  </reference>
+  <reference parentTable="WP_Asset" childTable="WP_Asset">
+    <column parent="AssetID" child="ReplacedWith_AssetID"/>
+  </reference>
+  <reference parentTable="Product" childTable="ProdComposition">
+    <column parent="ProductCode" child="ProdCodePart"/>
+  </reference>
+  <reference parentTable="Material" childTable="ProdContent">
+    <column parent="materialID" child="materialID"/>
+  </reference>
+  <reference parentTable="WP_Denomination" childTable="WP_Asset">
+    <column parent="id" child="Denomination_id"/>
+  </reference>
+  <reference parentTable="WP_Region" childTable="WP_Asset">
+    <column parent="id" child="Region_id"/>
+  </reference>
+  <reference parentTable="WP_Manufacturer" childTable="WP_Asset">
+    <column parent="id" child="Manufacturer_id"/>
+  </reference>
+  <reference parentTable="WP_MaintenanceActivity" childTable="WP_MaintenanceOrderLine">
+    <column parent="id" child="MaintenanceActivity_id"/>
+  </reference>
+  <reference parentTable="WP_FailureReason" childTable="WP_MaintenanceOrderLine">
+    <column parent="id" child="FailureReason_id"/>
+  </reference>
+  <reference parentTable="WP_Region" childTable="WP_MaintenanceOrder">
+    <column parent="id" child="Region_id"/>
+  </reference>
+  <reference parentTable="WP_MaintenanceReason" childTable="WP_MaintenanceOrder">
+    <column parent="id" child="Reason_id"/>
+  </reference>
+  <reference parentTable="WP_Region" childTable="WP_MaintenanceLocation">
+    <column parent="id" child="Region_id"/>
+  </reference>
+  <reference parentTable="WP_MaintenanceActivity" childTable="WP_AssetGroup_MaintenanceActivity">
+    <column parent="id" child="MaintenanceActivity_id"/>
+  </reference>
+  <reference parentTable="WP_CoinMachineType" childTable="WP_CoinMachine">
+    <column parent="CoinMachineTypeId" child="Type"/>
+  </reference>
+  <reference parentTable="WP_CoinMachineType" childTable="WP_StockPosition">
+    <column parent="CoinMachineTypeId" child="MachineType"/>
+  </reference>
+  <reference parentTable="WP_CoinMachineType" childTable="WP_StatusCategory">
+    <column parent="CoinMachineTypeId" child="MachineType"/>
+  </reference>
+  <reference parentTable="WP_MachineModel" childTable="WP_CoinMachine">
+    <column parent="MachineModelId" child="MachineModelId"/>
+  </reference>
+  <reference parentTable="WP_MachineModel" childTable="WP_StockPosition">
+    <column parent="MachineModelId" child="MachineModelId"/>
+  </reference>
+  <reference parentTable="WP_MachineModel" childTable="WP_StatusCategory">
+    <column parent="MachineModelId" child="MachineModel"/>
+  </reference>
+  <reference parentTable="WP_StatusCode" childTable="WP_CoinMachine">
+    <column parent="id" child="Status"/>
+  </reference>
+  <reference parentTable="WP_StatusCode" childTable="WP_CM_StatusMessage">
+    <column parent="id" child="StatusCode_id"/>
+  </reference>
+  <reference parentTable="WP_StatusCode" childTable="WP_StatusCategory">
+    <column parent="id" child="Status"/>
+  </reference>
+  <reference parentTable="WP_ResponsibilityCategory" childTable="WP_CoinMachine">
+    <column parent="id" child="Category"/>
+  </reference>
+  <reference parentTable="WP_ResponsibilityCategory" childTable="WP_CM_StatusMessage">
+    <column parent="id" child="Category"/>
+  </reference>
+  <reference parentTable="WP_ResponsibilityCategory" childTable="WP_StatusCategory">
+    <column parent="id" child="Category"/>
+  </reference>
+  <reference parentTable="WP_StatusCode" childTable="WP_AliveStatusMonitorSettings">
+    <column parent="id" child="Status"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_StockPosition">
+    <column parent="ProductCode" child="ProductCode"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_StockPosition">
+    <column parent="ProductCode" child="RefillProduct"/>
+  </reference>
+  <reference parentTable="Material" childTable="WP_StockPosition">
+    <column parent="materialID" child="MaterialId"/>
+  </reference>
+
+  <!-- Region WP_ServiceType -->
+  <reference parentTable="WP_ServiceType" childTable="WP_CoinMachine">
+    <column parent="id" child="ServiceTypeCollectDeliver"/>
+  </reference>
+  <reference parentTable="WP_ServiceType" childTable="WP_CoinMachine">
+    <column parent="id" child="ServiceTypeCollectOnly"/>
+  </reference>
+  <reference parentTable="WP_ServiceType" childTable="WP_Contracts_CashCenterContractLine">
+    <column parent="id" child="ServiceTypeID"/>
+  </reference>
+  <reference parentTable="WP_ServiceType" childTable="WP_Contracts_ContractOrderingSettings">
+    <column parent="id" child="ServiceType_id"/>
+  </reference>
+  <reference parentTable="WP_ServiceType" childTable="WP_Contracts_ScheduleSetting">
+    <column parent="id" child="ServiceTypeID"/>
+  </reference>
+  <reference parentTable="WP_ServiceType" childTable="WP_Contracts_CashCenterContractLine">
+    <column parent="id" child="ServiceTypeID"/>
+  </reference>
+  <reference parentTable="WP_ServiceType" childTable="WP_OrderImport_ServiceTypeSetting">
+    <column parent="id" child="CollectServiceTypeID"/>
+  </reference>
+  <reference parentTable="WP_ServiceType" childTable="WP_OrderImport_ServiceTypeSetting">
+    <column parent="id" child="DeliveryServiceTypeID"/>
+  </reference>
+  <reference parentTable="WP_ServiceType" childTable="ServiceOrder">
+    <column parent="Code" child="WP_ServiceType_Code"/>
+  </reference>
+  <reference parentTable="WP_ServiceType" childTable="Cwc_Transport_CitProcessSettingReplenishmentConfiguration">
+    <column parent="id" child="ReplenishmentTypeID"/>
+  </reference>
+  <reference parentTable="WP_ServiceType" childTable="Cwc_Transport_CitProcessSettingReplenishmentConfiguration">
+    <column parent="id" child="CollectionTypeID"/>
+  </reference>
+  <reference parentTable="WP_ServiceType" childTable="Cwc_Transport_CitProcessSettingReplenishmentConfiguration">
+    <column parent="id" child="DeliveryTypeID"/>
+  </reference>
+  <reference parentTable="WP_ServiceType" childTable="Cwc_Transport_CitProcessSettingReplenishmentConfiguration">
+    <column parent="id" child="ServicingTypeID"/>
+  </reference>
+  <reference parentTable="WP_ServiceType" childTable="Cwc_Transport_CitProcessSetting">
+    <column parent="id" child="DefaultAdditionalDeliveryServiceTypeId"/>
+  </reference>
+  <!-- EndRegion -->
+
+  <reference parentTable="location" childTable="WP_BaseData_Automate">
+    <column parent="loc_nr" child="LocationID"/>
+  </reference>
+  <reference parentTable="location" childTable="WP_OpenTimeSettings">
+    <column parent="loc_nr" child="Location"/>
+  </reference>
+  <reference parentTable="LocationType" childTable="WP_OpenTimeSettings">
+    <column parent="ltCode" child="LocationType"/>
+  </reference>
+  <reference parentTable="LocationType" childTable="location">
+    <column parent="ltCode" child="ltCode"/>
+  </reference>
+  <reference parentTable="LocationType" childTable="WP_CashCenter_ProcessSetting">
+    <column parent="ltCode" child="LocationTypeCode"/>
+  </reference>
+  <reference parentTable="LocationType" childTable="WP_DynamicsIntegrationLocationTypeSettings">
+    <column parent="ltCode" child="LocationType"/>
+  </reference>
+  <reference parentTable="location" childTable="WP_User_Location">
+    <column parent="loc_nr" child="Location_id"/>
+  </reference>
+  <reference parentTable="location" childTable="WP_Client_Location">
+    <column parent="loc_nr" child="Location_id"/>
+  </reference>
+  <reference parentTable="location" childTable="WP_PickUpLocationLink">
+    <column parent="loc_nr" child="WP_LocationAt_loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="WP_PickUpLocationLink">
+    <column parent="loc_nr" child="WP_LocationFor_loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="ServiceOrder">
+    <column parent="loc_nr" child="WP_loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="SOline">
+    <column parent="loc_nr" child="WP_To_Loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="SOline">
+    <column parent="loc_nr" child="Loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="branch">
+    <column parent="loc_nr" child="loc_nr"/>
+  </reference>
+  <reference parentTable="branch" childTable="location">
+    <column parent="branch_nr" child="branch_nr"/>
+  </reference>
+  <reference parentTable="branch" childTable="location">
+    <column parent="loc_nr" child="loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="loc_equip">
+    <column parent="loc_nr" child="loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="loc_hol">
+    <column parent="loc_nr" child="loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="loc_key">
+    <column parent="loc_nr" child="loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="WP_CoinMachine">
+    <column parent="loc_nr" child="LocationId"/>
+  </reference>
+  <reference parentTable="location" childTable="WP_LocationServiceSettings">
+    <column parent="loc_nr" child="LocationNumber"/>
+  </reference>
+  <reference parentTable="location" childTable="dai_atm">
+    <column parent="loc_nr" child="loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="WP_GroupLocation">
+    <column parent="loc_nr" child="Location_id"/>
+  </reference>
+  <reference parentTable="location" childTable="dai_coin">
+    <column parent="loc_nr" child="loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="dai_line">
+    <column parent="loc_nr" child="loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="dai_pack">
+    <column parent="loc_nr" child="fr_loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="dai_pack">
+    <column parent="loc_nr" child="to_loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="dai_serv">
+    <column parent="loc_nr" child="to_loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="dai_serv">
+    <column parent="loc_nr" child="loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="WP_BaseData_PersonLocation">
+    <column parent="loc_nr" child="LocationID"/>
+  </reference>
+  <reference parentTable="location" childTable="Cwc_Billing_BillingLine">
+    <column parent="loc_nr" child="LocationID"/>
+  </reference>
+  <reference parentTable="location" childTable="truck">
+    <column parent="loc_nr" child="loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="his_pack">
+    <column parent="loc_nr" child="to_loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="his_pack">
+    <column parent="loc_nr" child="fr_loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="loc_mess">
+    <column parent="loc_nr" child="loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="loc_repr">
+    <column parent="loc_nr" child="loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="WP_DestinationLocation">
+    <column parent="loc_nr" child="from_loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="WP_DestinationLocation">
+    <column parent="loc_nr" child="to_loc_nr"/>
+  </reference>
+  <reference parentTable="location" childTable="WP_CashCenter_ProcessSetting">
+    <column parent="loc_nr" child="LocationId"/>
+  </reference>
+  <reference parentTable="location" childTable="Cwc_Transport_CitProcessSettingLink">
+    <column parent="loc_nr" child="LocationID"/>
+  </reference>
+  <reference parentTable="location" childTable="location">
+    <column parent="id" child="VisitAddressID"/>
+  </reference>
+  <reference parentTable="location" childTable="WP_CashCenter_StockOrder">
+    <column parent="loc_nr" child="LocationTo_id"/>
+  </reference>
+  <reference parentTable="WP_PackageType" childTable="location">
+    <column parent="Code" child="PackageType"/>
+  </reference>
+  <reference parentTable="WP_CoinMachine" childTable="WP_CM_Transaction">
+    <column parent="MachineId" child="Machine_id"/>
+  </reference>
+  <reference parentTable="WP_CoinMachine" childTable="WP_CM_StatusMessage">
+    <column parent="MachineId" child="Machine_id"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_BaseData_CustomerReferenceSetting">
+    <column parent="cus_nr" child="CustomerID"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_BaseData_PersonCustomer">
+    <column parent="cus_nr" child="CustomerID"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_User_Customer">
+    <column parent="cus_nr" child="Customer_id"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_Client_Customer">
+    <column parent="cus_nr" child="CustomerOwner_id"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_Client_Customer">
+    <column parent="cus_nr" child="CustomerClient_id"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_GroupCustomer">
+    <column parent="cus_nr" child="Customer_id"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_Client_Location">
+    <column parent="cus_nr" child="Customer_id"/>
+  </reference>
+  <reference parentTable="customer" childTable="ServiceOrder">
+    <column parent="cus_nr" child="Cus_nr"/>
+  </reference>
+  <reference parentTable="customer" childTable="Cwc_Billing_BillingLine">
+    <column parent="cus_nr" child="CustomerID"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_CoinMachine">
+    <column parent="cus_nr" child="OwnerId"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_CoinMachine">
+    <column parent="cus_nr" child="SupplierId"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_OpenTimeSettings">
+    <column parent="cus_nr" child="Customer"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_Asset">
+    <column parent="cus_nr" child="Customer_id"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_MaintenanceLocation">
+    <column parent="cus_nr" child="Customer_id"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_User_Customer">
+    <column parent="cus_nr" child="Customer_id"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_CM_ExactCustomerSyncSettings">
+    <column parent="cus_nr" child="CustomerID"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_BaseData_CustomerContactPersonLink">
+    <column parent="cus_nr" child="CustomerID"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_Contracts_Contract">
+    <column parent="cus_nr" child="Customer_id"/>
+  </reference>
+  <reference parentTable="customer" childTable="PerfItem">
+    <column parent="cus_nr" child="itpfCustomerNr"/>
+  </reference>
+  <reference parentTable="customer" childTable="PerfStop">
+    <column parent="cus_nr" child="stpfCustomerNr"/>
+  </reference>
+  <reference parentTable="customer" childTable="location">
+    <column parent="cus_nr" child="cus_nr"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_BaseData_BankAccount">
+    <column parent="cus_nr" child="Customer"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_CashCenter_ProcessSetting">
+    <column parent="cus_nr" child="CustomerId"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_BaseData_BankIdentifierCode">
+    <column parent="cus_nr" child="BankID"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_BaseData_BankAccountFormat">
+    <column parent="cus_nr" child="BankID"/>
+  </reference>
+  <reference parentTable="customer" childTable="customer">
+    <column parent="cus_nr" child="AffiliatedBankID"/>
+  </reference>
+  <reference parentTable="customer" childTable="customer">
+    <column parent="cus_nr" child="ParentCustomer"/>
+  </reference>
+  <reference parentTable="WP_BaseData_BankAccount" childTable="location">
+    <column parent="id" child="BankAccount_id"/>
+  </reference>
+  <reference parentTable="WP_Routes_MasterRoute" childTable="WP_Routes_MasterRouteStop">
+    <column parent="id" child="MasterRoute_id"/>
+  </reference>
+  <reference parentTable="WP_Call_CallCategory" childTable="WP_Call_DepartmentCallCategory">
+    <column parent="id" child="CallCategory_id"/>
+  </reference>
+  <reference parentTable="WP_Call_CallCategory" childTable="WP_CallManagement_Call">
+    <column parent="id" child="CallCategory_id"/>
+  </reference>
+  <reference parentTable="WP_Group" childTable="WP_Call_DepartmentCallCategory">
+    <column parent="id" child="Department_id"/>
+  </reference>
+  <reference parentTable="WP_Group" childTable="WP_CallManagement_Task">
+    <column parent="id" child="Department_id"/>
+  </reference>
+  <reference parentTable="WP_Group" childTable="location">
+    <column parent="id" child="OrderingDepartmentID"/>
+  </reference>
+  <reference parentTable="WP_Call_Requestor" childTable="WP_CallManagement_Call">
+    <column parent="id" child="Requestor_id"/>
+  </reference>
+  <reference parentTable="WP_CallManagement_FailureCode" childTable="WP_CallManagement_Call">
+    <column parent="id" child="FailureCode_id"/>
+  </reference>
+  <reference parentTable="WP_CallManagement_SolutionCode" childTable="WP_CallManagement_Call">
+    <column parent="id" child="SolutionCode_id"/>
+  </reference>
+  <reference parentTable="WP_CallManagement_Call" childTable="WP_CallManagement_Call">
+    <column parent="id" child="Call_id"/>
+  </reference>
+  <reference parentTable="WP_CoinMachine" childTable="WP_CallManagement_Call">
+    <column parent="Number" child="CashPointNumber"/>
+  </reference>
+  <reference parentTable="WP_Call_CallCategory" childTable="WP_CallManagement_Task">
+    <column parent="id" child="CallCategory_id"/>
+  </reference>
+  <reference parentTable="WP_CallManagement_Call" childTable="WP_CallManagement_Task">
+    <column parent="id" child="Call_id"/>
+  </reference>
+  <reference parentTable="WP_Call_CallCategory" childTable="WP_Call_CallCategoryServiceType">
+    <column parent="id" child="CallCategory_id"/>
+  </reference>
+  <reference parentTable="WP_CashCenter_Stream" childTable="WP_CashCenter_StreamLocationLink">
+    <column parent="id" child="StreamID"/>
+  </reference>
+  <reference parentTable="WP_CashCenter_Stream" childTable="WP_CashCenter_ProcessingSession">
+    <column parent="id" child="StreamID"/>
+  </reference>
+  <reference parentTable="location" childTable="WP_CashCenter_StreamLocationLink">
+    <column parent="loc_nr" child="Location_id"/>
+  </reference>
+  <reference parentTable="WP_CashCenter_StockLocation" childTable="WP_CashCenter_StockLocationSetting">
+    <column parent="id" child="StockLocationID" />
+  </reference>
+  <reference parentTable="WP_CashCenter_StockLocation" childTable="WP_CashCenter_StockLocation">
+    <column parent="id" child="ParentStockLocation_id" />
+  </reference>
+  <reference parentTable="WP_CashCenter_StockLocation" childTable="WP_CashCenter_StockContainer">
+    <column parent="id" child="StockLocation_id" />
+  </reference>
+  <reference parentTable="WP_CashCenter_StockLocation" childTable="WP_CashCenter_StockContainer">
+    <column parent="id" child="DestinationStockLocation_id" />
+  </reference>
+  <reference parentTable="WP_CashCenter_StockLocation" childTable="WP_CashCenter_StockPosition">
+    <column parent="id" child="StockLocation_id" />
+  </reference>
+  <reference parentTable="WP_CashCenter_StockLocation" childTable="WP_CashCenter_StockTransaction">
+    <column parent="id" child="StockLocation_id" />
+  </reference>
+  <reference parentTable="WP_CashCenter_OrdersBatch" childTable="WP_CashCenter_StockOrder">
+    <column parent="id" child="OrdersBatch_id" />
+  </reference>
+  <reference parentTable="WP_CashCenter_StockLocation" childTable="WP_CashCenter_StockOrder">
+    <column parent="id" child="StockLocationID" />
+  </reference>
+  <reference parentTable="WP_CashCenter_ProcessingReasonCode" childTable="WP_CashCenter_ProcessingRemark">
+    <column parent="id" child="ProcessingReasonCodeID" />
+  </reference>
+  <reference parentTable="bag_type" childTable="WP_CashCenter_StockContainer">
+    <column parent="bgtyp_nr" child="BagTypeID" />
+  </reference>
+  <reference parentTable="bag_type" childTable="WP_CashCenter_MovementType">
+    <column parent="bgtyp_nr" child="BagTypeID" />
+  </reference>
+  <reference parentTable="WP_CashCenter_OrdersBatch" childTable="WP_CashCenter_StockContainer">
+    <column parent="id" child="OrdersBatch" />
+  </reference>
+  <reference parentTable="SiteStockHistory" childTable="SiteStockHistoryLine">
+    <column parent="id" child="SiteStockHistoryId" />
+  </reference>
+  <reference parentTable="WP_CashCenter_StockOwner" childTable="WP_CashCenter_StockPosition">
+    <column parent="id" child="StockOwner_id" />
+  </reference>
+  <reference parentTable="WP_CashCenter_StockOwner" childTable="WP_CashCenter_Stream">
+    <column parent="id" child="StockOwner_id" />
+  </reference>
+  <reference parentTable="WP_Clieop_Profile" childTable="WP_Clieop_ProfileToCompanyLink">
+    <column parent="id" child="ProfileID" />
+  </reference>
+  <reference parentTable="WP_Clieop_Profile" childTable="WP_Clieop_ProfileField">
+    <column parent="id" child="ClieopProfileID" />
+  </reference>
+  <reference parentTable="WP_BaseData_Camera" childTable="WP_BaseData_Workstation">
+    <column parent="id" child="CameraID" />
+  </reference>
+  <reference parentTable="WP_BaseData_Sender" childTable="Cwc_Feedings_ValidatedFeeding">
+    <column parent="id" child="SenderID" />
+  </reference>
+  <reference parentTable="Material" childTable="WP_CashCenter_StockTransactionLine">
+    <column parent="materialID" child="Material_ID" />
+  </reference>
+  <reference parentTable="Product" childTable="WP_CashCenter_StockTransactionLine">
+    <column parent="ProductCode" child="Product_id" />
+  </reference>
+  <reference parentTable="location" childTable="WP_Contracts_ScheduleSetting">
+    <column parent="loc_nr" child="Location_id"/>
+  </reference>
+  <reference parentTable="location" childTable="WP_Contracts_ContractLine">
+    <column parent="loc_nr" child="LocationContracted_id"/>
+  </reference>
+  <reference parentTable="location" childTable="WP_Contracts_ContractLine">
+    <column parent="loc_nr" child="LocationCollect_id"/>
+  </reference>
+  <reference parentTable="location" childTable="WP_Contracts_ContractLine">
+    <column parent="loc_nr" child="LocationOnward_id"/>
+  </reference>
+  <reference parentTable="location" childTable="WP_Contracts_ContractOrderingSettings">
+    <column parent="loc_nr" child="Location_id"/>
+  </reference>
+  <reference parentTable="location" childTable="WP_Contracts_CashCenterContractLine">
+    <column parent="loc_nr" child="LocationID"/>
+  </reference>
+  <reference parentTable="location" childTable="WP_Contracts_PackageTypeLink">
+    <column parent="loc_nr" child="OnwardLocation_id"/>
+  </reference>
+  <reference parentTable="LocationType" childTable="WP_Contracts_ContractLine">
+    <column parent="ltCode" child="LocationType_code"/>
+  </reference>
+  <reference parentTable="LocationType" childTable="WP_Contracts_ContractOrderingSettings">
+    <column parent="ltCode" child="LocationType_code"/>
+  </reference>
+  <reference parentTable="LocationType" childTable="WP_Contracts_CashCenterContractLine">
+    <column parent="ltCode" child="LocationTypeCode"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_Contracts_ContractLine">
+    <column parent="cus_nr" child="RegionCollect_id"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_Contracts_ContractLine">
+    <column parent="cus_nr" child="RegionContracted_id"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_Contracts_ContractLine">
+    <column parent="cus_nr" child="RegionOnward_id"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_Contracts_CashCenterContractLine">
+    <column parent="cus_nr" child="RegionID"/>
+  </reference>
+  <reference parentTable="customer" childTable="WP_Contracts_CashCenterContractLine">
+    <column parent="cus_nr" child="DebtorID"/>
+  </reference>
+  <reference parentTable="WP_BaseData_BankAccount" childTable="WP_Contracts_ContractLine">
+    <column parent="id" child="BankAccount_id"/>
+  </reference>
+  <reference parentTable="WP_BaseData_BankAccount" childTable="WP_Contracts_CashCenterContractLine">
+    <column parent="id" child="BankAccountID"/>
+  </reference>
+  <reference parentTable="WP_BaseData_BankAccount" childTable="WP_BaseData_CustomerBankAccount">
+    <column parent="id" child="BankAccountID"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_Contracts_ContractedProductLink">
+    <column parent="ProductCode" child="Product_code"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_Contracts_ContractedCount">
+    <column parent="ProductCode" child="ProductCode"/>
+  </reference>
+  <reference parentTable="Material" childTable="WP_Contracts_ContractedCount">
+    <column parent="materialID" child="materialID" />
+  </reference>
+  <reference parentTable="Material" childTable="WP_BagTypeContentSettings">
+    <column parent="materialID" child="material_id" />
+  </reference>
+  <reference parentTable="Product" childTable="WP_BagTypeContentSettings">
+    <column parent="ProductCode" child="product_id" />
+  </reference>
+  <reference parentTable="bag_type" childTable="WP_BagTypeContentSettings">
+    <column parent="bgtyp_nr" child="BagType_id" />
+  </reference>
+  <reference parentTable="bag_type" childTable="WP_BaseData_BagTypeMaterialTypeLink">
+    <column parent="bgtyp_nr" child="BagTypeID" />
+  </reference>
+  <reference parentTable="MaterialType" childTable="WP_BaseData_BagTypeMaterialTypeLink">
+    <column parent="matTypeCode" child="MaterialTypeID" />
+  </reference>
+  <reference parentTable="ProductType" childTable="WP_Contracts_ContractedCount">
+    <column parent="prodTypeCode" child="ProductTypeID" />
+  </reference>
+  <reference parentTable="MaterialType" childTable="WP_Contracts_ContractedCount">
+    <column parent="matTypeCode" child="MaterialTypeID" />
+  </reference>
+  <reference parentTable="bag_type" childTable="WP_Contracts_PackageTypeLink">
+    <column parent="bgtyp_nr" child="BagType_id"/>
+  </reference>
+  <reference parentTable="bag_type" childTable="WP_CashCenter_SiteSetting">
+    <column parent="bgtyp_nr" child="LooseProductsOrdersBagTypeID"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_CM_OrderPropositionLine">
+    <column parent="ProductCode" child="ProductCode"/>
+  </reference>
+  <reference parentTable="WP_CashCenter_BanknoteSeries" childTable="WP_CashCenter_Banknote">
+    <column parent="id" child="SeriesID"/>
+  </reference>
+  <reference parentTable="bag_type" childTable="WP_CashCenter_SiteSettingBagTypeLink">
+    <column parent="bgtyp_nr" child="BagTypeID" />
+  </reference>
+  <reference parentTable="bag_type" childTable="WP_CashCenter_ProcessSettingBagTypeMaterialTypeLink">
+    <column parent="bgtyp_nr" child="BagTypeID" />
+  </reference>
+  <reference parentTable="Material" childTable="WP_CashControl_JobMaterialSettings">
+    <column parent="materialID" child="MaterialID"/>
+  </reference>
+  <reference parentTable="WP_BaseData_ContactPerson" childTable="Cwc_BaseData_ContactPersonLink">
+    <column parent="id" child="ContactPersonID"/>
+  </reference>
+  <reference parentTable="Cwc_Integration_Mapper" childTable="Cwc_Integration_MapperLine">
+    <column parent="id" child="MapperID" />
+  </reference>
+  <reference parentTable="Cwc_Integration_Mapper" childTable="Cwc_Feedings_MapperAlternativeProductSetting" deleteRule="2">
+    <column parent="id" child="MapperID" />
+  </reference>
+  <reference parentTable="Product" childTable="Cwc_Feedings_MapperAlternativeProductSetting">
+    <column parent="WP_id" child="ProductID" />
+  </reference>
+  <reference parentTable="Product" childTable="Cwc_Feedings_MapperAlternativeProductSetting">
+    <column parent="WP_id" child="AlternativeProductID" />
+  </reference>
+  <reference parentTable="Cwc_Integration_Mapper" childTable="Cwc_Feedings_ValidatedFeeding">
+    <column parent="id" child="MapperID" />
+  </reference>
+  <reference parentTable="WP_BaseData_BankIdentifierCode" childTable="WP_BaseData_BankAccount">
+    <column parent="id" child="BankIdentifierCodeID"/>
+  </reference>
+  <reference parentTable="WP_CoinMachineType" childTable="Cwc_CashControl_CashPointTypeSetting">
+    <column parent="CoinMachineTypeId" child="CashPointTypeID"/>
+  </reference>
+  <reference parentTable="customer" childTable="Cwc_Transport_CitExportDataCompanyLink">
+    <column parent="cus_nr" child="CompanyID"/>
+  </reference>
+  <reference parentTable="WP_BaseData_BankAccount" childTable="WP_CashCenter_StockContainer">
+    <column parent="id" child="BankAccountID" />
+  </reference>
+  <reference parentTable="WP_BaseData_Automate" childTable="Cwc_CashPoint_PosTransaction">
+    <column parent="id" child="AutomateID"/>
+  </reference>
+  <reference parentTable="ServiceOrder" childTable="WP_CashCenter_StockContainer">
+    <column parent="Order_ID" child="ServiceOrderID"/>
+  </reference>
+  <reference parentTable="ServiceOrder" childTable="WP_Routes_MasterRoute">
+    <column parent="Order_ID" child="MasterRouteID"/>
+  </reference>
+  <reference parentTable="WP_User" childTable="WP_BaseData_Person">
+    <column parent="id" child="UserAccountID"/>
+  </reference>
+  <reference parentTable="WP_CoinMachineType" childTable="location">
+    <column parent="CoinMachineTypeId" child="CashPointTypeID"/>
+  </reference>
+  <reference parentTable="location" childTable="location">
+    <column parent="loc_nr" child="loc_nr_main"/>
+  </reference>
+  <reference parentTable="WP_Routes_MasterRoute" childTable="WP_Contracts_ScheduleLine">
+    <column parent="id" child="MasterRoute_id"/>
+  </reference>
+  <reference parentTable="WP_Routes_MasterRoute" childTable="ServiceOrder">
+    <column parent="id" child="MasterRouteID"/>
+  </reference>
+  <reference parentTable="Product" childTable="Cwc_Integration_OrderImportFormatB_OrderImportFormatBJobProductLink">
+    <column parent="WP_id" child="ProductID"/>
+  </reference>
+  <reference parentTable="Product" childTable="Cwc_Contracts_OrderingSettingLooseProductsLink">
+    <column parent="WP_id" child="ProductID"/>
+  </reference>
+  <reference parentTable="customer" childTable="Cwc_Integration_OrderImportFormatB_OrderImportFormatBJobSettings">
+    <column parent="id" child="CompanyID"/>
+  </reference>
+  <reference parentTable="WP_Group" childTable="Cwc_Integration_OrderImportFormatB_OrderImportFormatBJobSettings">
+    <column parent="id" child="OrderingDepartmentID"/>
+  </reference>
+  <reference parentTable="WP_ServiceType" childTable="Cwc_Integration_OrderImportFormatB_OrderImportFormatBJobSettings">
+    <column parent="id" child="ServiceTypeID"/>
+  </reference>
+  <reference parentTable="LocationType" childTable="Cwc_Integration_OrderImportFormatB_OrderImportFormatBJobSettings">
+    <column parent="id" child="LocationTypeID"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_CashCenter_StockLocationSettingProductTypeLink">
+    <column parent="ProductCode" child="ProductTypeCode"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_Contracts_ContractProductSettings">
+    <column parent="ProductCode" child="Product_code"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_DynamicsIntegrationOrderProductSettings">
+    <column parent="ProductCode" child="ProductCode"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_ProductPrice">
+    <column parent="ProductCode" child="ProductCode"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_ContractedProduct">
+    <column parent="ProductCode" child="ProductCode"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_Discrepancy">
+    <column parent="ProductCode" child="ProductCode"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_CashCenter_SiteStockPositionHistory">
+    <column parent="ProductCode" child="ProductID"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_CM_TransactionImportProductSettings">
+    <column parent="ProductCode" child="ProductID"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_StockPositionHistory">
+    <column parent="ProductCode" child="ProductCode"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_WTUInterfaceDenominations">
+    <column parent="ProductCode" child="ProductCode"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_WincorInterfaceDenominations">
+    <column parent="ProductCode" child="ProductCode"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_PasmuntBestandInterfaceDenominations">
+    <column parent="ProductCode" child="ProductCode"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_CM_TrendDetectionLog">
+    <column parent="ProductCode" child="ProductCode"/>
+  </reference>
+  <reference parentTable="Product" childTable="Cwc_Transport_TransportOrderProduct">
+    <column parent="WP_id" child="ProductID"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_IntegrationMasterDataImport_MasterDataOrderProductSetting">
+    <column parent="ProductCode" child="ProductID"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_CM_TransactionLine">
+    <column parent="ProductCode" child="ProductCode"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_CM_DailyStockRecord">
+    <column parent="ProductCode" child="ProductCode"/>
+  </reference>
+  <reference parentTable="Product" childTable="Cwc_Integration_OrderImportFormatA_OrderImportFormatAJobProductLink">
+    <column parent="WP_id" child="ProductId"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_OrderImport_ProductSetting">
+    <column parent="ProductCode" child="ProductID"/>
+  </reference>
+  <reference parentTable="Product" childTable="SOProduct">
+    <column parent="ProductCode" child="ProductCode"/>
+  </reference>
+  <reference parentTable="Product" childTable="WP_CashCenter_StockPosition">
+    <column parent="ProductCode" child="Product_id"/>
+  </reference>
+  <reference parentTable="WP_BaseData_Person" childTable="WP_Contracts_PersonContract">
+    <column parent="id" child="PersonID"/>
+  </reference>
+  <reference parentTable="branch" childTable="location">
+    <column parent="id" child="ForeignCurrencySiteID"/>
+  </reference>
+  <reference parentTable="branch" childTable="Cwc_Integration_Transport_TransportFileRouting">
+    <column parent="id" child="SiteID"/>
+  </reference>
+  <reference parentTable="Cwc_TransportInterface_TransportIntegrationSettings" childTable="Cwc_Integration_Transport_TransportFileRouting">
+    <column parent="id" child="TransportSettingsID"/>
+  </reference>
+  <reference parentTable="bag_type" childTable="Cwc_Dynamics_DynamicsProductContainerTypeSetting">
+    <column parent="id" child="ContainerTypeID"/>
+  </reference>
+  <reference parentTable="MaterialType" childTable="Cwc_Dynamics_DynamicsProductContainerTypeSetting">
+    <column parent="id" child="MaterialTypeID"/>
+  </reference>
+  <reference parentTable="Cwc_Billing_BillingLine" childTable="Cwc_Billing_PreannouncementBillingExportExportedBillingLine">
+    <column parent="id" child="BillingLineID"/>
+  </reference>
+  <reference parentTable="LocationType" childTable="WP_CashCenter_ProcessSetting">
+    <column parent="id" child="DefaultLocationTypeID"/>
+  </reference>
+</references>

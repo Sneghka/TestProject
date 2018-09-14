@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <customer act="0">
+    <cus_nr>11014089</cus_nr>
+    <name>Test Customer 01</name>
+    <abbrev>AUTOTEST01</abbrev>
+    <csgrp_cd>TEST</csgrp_cd>
+    <area_pc>
+    </area_pc>
+    <det_pc>
+    </det_pc>
+    <deb_nr>
+    </deb_nr>
+    <msCode>
+    </msCode>
+    <internal>
+    </internal>
+    <bnk_id>0</bnk_id>
+    <order_level>0</order_level>
+    <askSignature>
+    </askSignature>
+    <WP_RecordType>customer</WP_RecordType>
+  </customer>
+</DocumentElement>

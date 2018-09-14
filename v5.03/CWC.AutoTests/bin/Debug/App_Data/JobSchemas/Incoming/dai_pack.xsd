@@ -1,0 +1,42 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="dai_pack" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dai_pack">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="coll_lg" type="xs:boolean" minOccurs="0" />
+              <xs:element name="dai_date" msprop:Type="DateTime" type="xs:string" minOccurs="0" />
+              <xs:element name="day_nr" type="xs:int" minOccurs="0" />
+              <xs:element name="fr_loc_nr" type="xs:decimal" minOccurs="0" />
+              <xs:element name="bgtyp_nr" type="xs:int" minOccurs="0" />
+              <xs:element name="to_loc_nr" type="xs:decimal" minOccurs="0" />
+              <xs:element name="time_a" type="xs:string" minOccurs="0" />
+              <xs:element name="in_lg" type="xs:boolean" minOccurs="0" />
+              <xs:element name="out_lg" type="xs:boolean" minOccurs="0" />
+              <xs:element name="pack_val" type="xs:decimal" minOccurs="0" />
+              <xs:element name="dec_val" type="xs:decimal" minOccurs="0" />
+              <xs:element name="pack_nr" type="xs:string" minOccurs="0" />
+              <xs:element name="branch_cd" type="xs:string" minOccurs="0" />
+              <xs:element name="mast_cd" type="xs:string" minOccurs="0" />
+              <xs:element name="fr_loc_cd" type="xs:string" minOccurs="0" />
+              <xs:element name="to_loc_cd" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+			  <xs:attribute name="act" type="xs:int" />
+		  </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+	  <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+		  <xs:selector xpath=".//dai_pack" />
+		  <xs:field xpath="dai_date" />
+		  <xs:field xpath="day_nr" />
+		  <xs:field xpath="fr_loc_nr" />
+		  <xs:field xpath="mast_cd" />
+		  <xs:field xpath="pack_nr" />
+		  <xs:field xpath="time_a" />
+		  <xs:field xpath="to_loc_nr" />
+	  </xs:unique>
+  </xs:element>
+</xs:schema>

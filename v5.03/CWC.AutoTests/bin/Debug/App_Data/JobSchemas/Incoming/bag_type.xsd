@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="bag_type" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="bag_type">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="bgtyp_nr" type="xs:int" minOccurs="0" />
+              <xs:element name="descript" type="xs:string" minOccurs="0" />
+              <xs:element name="abbrev" type="xs:string" minOccurs="0" />
+              <xs:element name="barcd_ident" type="xs:string" minOccurs="0" />
+              <xs:element name="repack" type="xs:boolean" minOccurs="0" />
+              <xs:element name="max_val_bag" type="xs:decimal" msprop:OptionalValues="true" msprop:DefaultValue="0" minOccurs="0"/>
+              <xs:element name="def_val_bag" type="xs:decimal" msprop:OptionalValues="true" msprop:DefaultValue="0" minOccurs="0"/>
+              <xs:element name="max_weight_bag" type="xs:decimal" msprop:OptionalValues="true" msprop:DefaultValue="0" minOccurs="0"/>
+              <xs:element name="def_weight_bag" type="xs:decimal" msprop:OptionalValues="true" msprop:DefaultValue="0" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute name="act" type="xs:int" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//bag_type" />
+      <xs:field xpath="bgtyp_nr" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

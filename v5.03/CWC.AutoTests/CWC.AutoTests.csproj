@@ -1,0 +1,3036 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\xunit.runner.visualstudio.2.4.0\build\net20\xunit.runner.visualstudio.props" Condition="Exists('..\packages\xunit.runner.visualstudio.2.4.0\build\net20\xunit.runner.visualstudio.props')" />
+  <Import Project="..\packages\xunit.core.2.4.0\build\xunit.core.props" Condition="Exists('..\packages\xunit.core.2.4.0\build\xunit.core.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C402BFC-C99C-4FE1-94CF-48D476001CBF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CWC.AutoTests</RootNamespace>
+    <AssemblyName>CWC.AutoTests</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>%24/Test/v5.03/CWC.AutoTests</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>http://tfs-server:8080/tfs/webportal</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Actions\DeleteEntityAction.cs" />
+    <Compile Include="Builders\CallManagementBuildedrs\CallBuilder.cs" />
+    <Compile Include="Builders\PreannouncementBillingExportSettingGroup.cs" />
+    <Compile Include="Builders\PreannouncementBillingExportSettingGroupCompanyLinkBuilder.cs" />
+    <Compile Include="Builders\ExchangeRateBuilder.cs" />
+    <Compile Include="Builders\FeedingBuilders\ExchangeRateFeedingBuilder.cs" />
+    <Compile Include="Builders\FeedingBuilders\LocationServicingTimeWindowFeedingBuilder.cs" />
+    <Compile Include="Builders\OrderImportFormatBJobSettingsBuilder.cs" />
+    <Compile Include="Builders\CitProcessSettingsBuilder\CitProcessSettingServicingTimeWindowBuilder.cs" />
+    <Compile Include="Builders\ContractBuilders\LooseProductLinkBuilder.cs" />
+    <Compile Include="Builders\ContractBuilders\ProductConversionSettingsBuilder.cs" />
+    <Compile Include="Builders\FeedingBuilders\CashPointTransactionFeedingBuilder.cs" />
+    <Compile Include="Builders\ReplicationPartyBuilder.cs" />
+    <Compile Include="Builders\FeedingBuilders\StockContainerListFeedingBuilder.cs" />
+    <Compile Include="Builders\StockPositionCashCenterBuilder.cs" />
+    <Compile Include="Builders\ContactPersonBuilder.cs" />
+    <Compile Include="Builders\CashCenterBuilders\WorkstationBuilder.cs" />
+    <Compile Include="Builders\CashCenterBuilders\StockLocationSettingBuilder.cs" />
+    <Compile Include="Builders\CashCenterBuilders\StockLocationTypeBuilder.cs" />
+    <Compile Include="Builders\CashCenterBuilders\StockLocationBuilder.cs" />
+    <Compile Include="Builders\CashCenterBuilders\StreamLocationLinkBuilder.cs" />
+    <Compile Include="Builders\CashCenterBuilders\StreamBuilder.cs" />
+    <Compile Include="Builders\CashCenterBuilders\StockOwnerBuilder.cs" />
+    <Compile Include="Helpers\BasicFileWorkHelper.cs" />
+    <Compile Include="Helpers\PreannauncementAndBillingHelper.cs" />
+    <Compile Include="Helpers\ReplicationHelper.cs" />
+    <Compile Include="Helpers\ServiceOrderListTestsHelper.cs" />
+    <Compile Include="Model\AutomationBaseDataContext.cs" />
+    <Compile Include="Model\AutomationBillingContext.cs" />
+    <Compile Include="Model\AutomationCallManagementDataContext.cs" />
+    <Compile Include="Model\AutomationCashCenterProcessSettingBagTypeMaterialTypeLink.cs" />
+    <Compile Include="Model\AutomationCashPointDataContext.cs" />
+    <Compile Include="Model\AutomationCoinDataContext.cs" />
+    <Compile Include="Model\AutomationOrderImportFormatBDataContext.cs" />
+    <Compile Include="Model\AutomationOrderImportFormatADataContext.cs" />
+    <Compile Include="Model\AutomationOrderingDataContext.cs" />
+    <Compile Include="Model\AutomationRoutesDataContext.cs" />
+    <Compile Include="Model\AutomationSecurityDataContext.cs" />
+    <Compile Include="Model\AutomationTransportDataContext.cs" />
+    <Compile Include="Model\AutomationFeedingDataContext.cs" />
+    <Compile Include="Model\DeliveryProductSpecification.cs" />
+    <Compile Include="Core\BasePage.cs" />
+    <Compile Include="Core\Configuration.cs" />
+    <Compile Include="Core\DriverHelper.cs" />
+    <Compile Include="Core\LoadTestFixture.cs" />
+    <Compile Include="Core\TestFixture.cs" />
+    <Compile Include="Core\UserSession.cs" />
+    <Compile Include="Model\AutomationCashCenterDataContext.cs" />
+    <Compile Include="Model\AutomationContractDataContext.cs" />
+    <Compile Include="DataModel\bag_type.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\bag_typeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\branch.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\branchConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Currency.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\CurrencyConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\customer.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\customerConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\cust_grp.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\cust_grpConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_BaseData_BankAccountAuditEvent.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_BaseData_BankAccountAuditEventConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_BaseData_ConfigurationKey.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_BaseData_ConfigurationKeyConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_BaseData_ContactPersonLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_BaseData_ContactPersonLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_BaseData_PostCode.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_BaseData_PostCodeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_BaseData_ProductGroup.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_BaseData_ProductGroupConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_BaseData_ProductMaterialLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_BaseData_ProductMaterialLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Billing_BilledCase.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Billing_BilledCaseConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Billing_BilledCaseDailyStop.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Billing_BilledCaseDailyStopConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Billing_BillingExportExportedBillingLine.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Billing_BillingExportExportedBillingLineConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Billing_BillingExportLog.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Billing_BillingExportLogConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Billing_BillingExportSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Billing_BillingExportSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Billing_BillingJobLog.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Billing_BillingJobLogConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Billing_BillingJobSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Billing_BillingJobSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Billing_BillingJobSettingsCompanyLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Billing_BillingJobSettingsCompanyLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Billing_BillingLine.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Billing_BillingLineConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Billing_BillingLineHistoricalField.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Billing_BillingLineHistoricalFieldConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashCenter_Integration_CCExportDataInterfaceAction.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashCenter_Integration_CCExportDataInterfaceActionCompanyLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashCenter_Integration_CCExportDataInterfaceActionCompanyLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashCenter_Integration_CCExportDataInterfaceActionConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashCenter_Integration_CCExportDataInterfaceActionSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashCenter_Integration_CCExportDataInterfaceActionSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashCenter_Integration_CCExportDataInterfaceActionSettingsQualificationType.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashCenter_Integration_CCExportDataInterfaceActionSettingsQualificationTypeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashCenter_Integration_CCExportDataInterfaceOperationalData.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashCenter_Integration_CCExportDataInterfaceOperationalDataConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashCenter_Integration_CCExportDataInterfaceTransaction.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashCenter_Integration_CCExportDataInterfaceTransactionConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashCenter_Integration_CCExportDataInterfaceTransactionLine.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashCenter_Integration_CCExportDataInterfaceTransactionLineConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashCenter_InternalProcessingJobPreannouncementReroutingLog.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashCenter_InternalProcessingJobPreannouncementReroutingLogConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashCenter_InternalProcessingJobScheduleSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashCenter_InternalProcessingJobScheduleSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashPoint_AlternatingCodeGenerationCashPointLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashPoint_AlternatingCodeGenerationCashPointLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashPoint_PosDiscrepancy.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashPoint_PosDiscrepancyConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashPoint_PosReconciliationPeriod.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashPoint_PosReconciliationPeriodConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashPoint_PosTransaction.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_CashPoint_PosTransactionConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Contracts_OrderingSettingLooseProductsLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Contracts_OrderingSettingLooseProductsLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Contracts_OrderingSettingProductConversionSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Contracts_OrderingSettingProductConversionSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Contracts_OrderingSettingServicingJob.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Contracts_OrderingSettingServicingJobConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Contracts_PriceLine.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Contracts_PriceLineConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Contracts_PriceLineLevel.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Contracts_PriceLineLevelConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Contracts_PriceLineUnitsRange.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Contracts_PriceLineUnitsRangeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Contracts_PriceRuleLevelSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Contracts_PriceRuleLevelSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Contracts_PriceRuleUnitLevelSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Contracts_PriceRuleUnitLevelSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Contracts_PriceRuleUnitOfMeasureDisabledFieldSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Contracts_PriceRuleUnitOfMeasureDisabledFieldSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Contracts_PriceRuleUnitOfMeasureSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Contracts_PriceRuleUnitOfMeasureSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Feedings_ValidatedFeeding.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Feedings_ValidatedFeedingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Feedings_ValidatedFeedingEntityTypeLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Feedings_ValidatedFeedingEntityTypeLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Feedings_ValidatedFeedingEntityTypeSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Feedings_ValidatedFeedingEntityTypeSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Feedings_ValidatedFeedingLog.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Feedings_ValidatedFeedingLogConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Forecast_TurnoverPercentageSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Forecast_TurnoverPercentageSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Integration_OrderImportFormatA_OrderImportFormatAJobLog.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Integration_OrderImportFormatA_OrderImportFormatAJobLogConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Integration_OrderImportFormatA_OrderImportFormatAJobProductLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Integration_OrderImportFormatA_OrderImportFormatAJobProductLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Integration_OrderImportFormatA_OrderImportFormatAJobSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Integration_OrderImportFormatA_OrderImportFormatAJobSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Integration_OrderImportFormatB_OrderImportFormatBJobLog.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Integration_OrderImportFormatB_OrderImportFormatBJobLogConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Integration_OrderImportFormatB_OrderImportFormatBJobPostcodeImportLog.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Integration_OrderImportFormatB_OrderImportFormatBJobPostcodeImportLogConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Integration_OrderImportFormatB_OrderImportFormatBJobPostcodeLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Integration_OrderImportFormatB_OrderImportFormatBJobPostcodeLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Integration_OrderImportFormatB_OrderImportFormatBJobPostcodeWeekdayLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Integration_OrderImportFormatB_OrderImportFormatBJobPostcodeWeekdayLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Integration_OrderImportFormatB_OrderImportFormatBJobProductLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Integration_OrderImportFormatB_OrderImportFormatBJobProductLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Integration_OrderImportFormatB_OrderImportFormatBJobSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Integration_OrderImportFormatB_OrderImportFormatBJobSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Integration_Transport_TransportFileRouting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Integration_Transport_TransportFileRoutingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Ordering_AutoReleaseJobSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Ordering_AutoReleaseJobSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Ordering_OrderExportJobLog.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Ordering_OrderExportJobLogConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Ordering_OrderExportJobSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Ordering_OrderExportJobSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Replication_JobInfoReplicationRoleLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Replication_JobInfoReplicationRoleLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_TransportInterface_TransportIntegrationSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_TransportInterface_TransportIntegrationSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitExportDataCompanyLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitExportDataCompanyLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitExportDataInterfaceSiteLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitExportDataInterfaceSiteLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitExportDataLog.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitExportDataLogConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitExportDataSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitExportDataSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitProcessingHistory.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitProcessingHistoryConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitProcessingHistoryException.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitProcessingHistoryExceptionConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitProcessSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitProcessSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitProcessSettingDestinationConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitProcessSettingDestinationConfigurationConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitProcessSettingLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitProcessSettingLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitProcessSettingReplenishmentConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitProcessSettingReplenishmentConfigurationConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitProcessSettingServicingTimeWindow.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitProcessSettingServicingTimeWindowConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitProcessSettingStopDuration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_CitProcessSettingStopDurationConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_ExceptionCase.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_ExceptionCaseConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_LastTransportOrderCode.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_LastTransportOrderCodeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_OnHoldTransportOrderProcessingJobSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_OnHoldTransportOrderProcessingJobSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_OrderCitAllocationJobLog.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_OrderCitAllocationJobLogConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_PackageLifeCycleProcessedItem.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_PackageLifeCycleProcessedItemConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_PackageLifeCycleProcessingJobLog.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_PackageLifeCycleProcessingJobLogConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_PackageLifeCycleProcessingJobSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_PackageLifeCycleProcessingJobSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_ServicingTimeWindowsExportItem.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_ServicingTimeWindowsExportItemConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_ServicingTimeWindowsExportJobLog.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_ServicingTimeWindowsExportJobLogConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_ServicingTimeWindowsExportJobSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_ServicingTimeWindowsExportJobSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_TransportOrder.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_TransportOrderConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_TransportOrderExportItem.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_TransportOrderExportItemConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_TransportOrderIntegrationJobImportLog.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_TransportOrderIntegrationJobImportLogConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_TransportOrderIntegrationJobReplenishmentQueue.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_TransportOrderIntegrationJobReplenishmentQueueConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_TransportOrderIntegrationJobSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_TransportOrderIntegrationJobSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_TransportOrderIntegrationJobTransportOrderLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_TransportOrderIntegrationJobTransportOrderLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_TransportOrderProduct.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_TransportOrderProductConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_TransportOrderServ.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Cwc_Transport_TransportOrderServConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\daily.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\dailyConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\dai_coin.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\dai_coinConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\dai_line.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\dai_lineConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\dai_pack.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\dai_packConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\dai_serv.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\dai_servConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\dai_servicingcode.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\dai_servicingcodeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Database.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\FakeDbSet.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\FakeModelContext.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\his_pack.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\his_packConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\IModelContext.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\location.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\locationConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\LocationType.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\LocationTypeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\loc_serv.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\loc_servConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\loc_type.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\loc_typeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Material.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\MaterialConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\MaterialType.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\MaterialTypeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\message.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\ModelContext.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\ModelContext.Views.cs" />
+    <Compile Include="DataModel\ModelContextFactory.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\ProdComposition.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\ProdCompositionConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\ProdContent.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\ProdContentConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Product.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\ProductConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\ProductType.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\ProductTypeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\reason.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\reasonConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\ServiceOrder.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\ServiceOrderConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\ServicingCode.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\ServicingCodeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\SOline.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\SOlineConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\SOProduct.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\SOProductConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\SOService.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\SOServiceConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\tru_op.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\tru_opConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_AfwaSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_AfwaSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_AfwaSettingCustomerLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_AfwaSettingCustomerLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_AliveMachine.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_AliveMachineConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_AliveStatusMonitorSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_AliveStatusMonitorSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Archiving_ArchivingJobSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Archiving_ArchivingJobSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Archiving_ArchivingSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Archiving_ArchivingSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Archiving_GraphUserSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Archiving_GraphUserSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Asset.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_AssetConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_AutomatedOrderCreationSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_AutomatedOrderCreationSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BagTypeContentSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BagTypeContentSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BagTypeMatchingMaterialType.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BagTypeMatchingMaterialTypeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BankHoliday.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BankHolidayConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BankHolidaySetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BankHolidaySettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BankNumber.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BankNumberConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_ActiveDirectoryImportIntegrationLog.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_ActiveDirectoryImportIntegrationLogConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_ActiveDirectoryImportJobSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_ActiveDirectoryImportJobSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_Address.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_AddressConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_AlarmCodeLocationLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_AlarmCodeLocationLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_Automate.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_AutomateConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_BagTypeMaterialTypeLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_BagTypeMaterialTypeLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_BankAccount.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_BankAccountConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_BankAccountFormat.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_BankAccountFormatConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_BankIdentifierCode.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_BankIdentifierCodeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_Camera.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_CameraConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_CodeFormat.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_CodeFormatConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_CodeZone.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_CodeZoneConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_ContactDetail.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_ContactDetailConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_ContactPerson.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_ContactPersonConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_Contact_Location.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_Contact_LocationConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_Country.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_CountryConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_CustomerBankAccount.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_CustomerBankAccountConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_CustomerContactPersonLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_CustomerContactPersonLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_CustomerMaterialLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_CustomerMaterialLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_CustomerReferenceSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_CustomerReferenceSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_DayClosureHistory.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_DayClosureHistoryConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_ExchangeRate.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_ExchangeRateConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_OnwardLocation.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_OnwardLocationConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_Person.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_PersonConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_PersonCustomer.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_PersonCustomerConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_PersonLocation.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_PersonLocationConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_PersonRole.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_PersonRoleConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_PLCCurrency.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_PLCCurrencyConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_Process.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_ProcessConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_ProcessingHistory.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_ProcessingHistoryConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_ProductionMachine.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_ProductionMachineConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_ProductionMachineMaterialTypeLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_ProductionMachineMaterialTypeLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_ProductionMachineProductLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_ProductionMachineProductLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_VisitReceipt.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_VisitReceiptConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_Workstation.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_BaseData_WorkstationConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Billing_Invoice.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Billing_InvoiceConfigLineSummarizeTypeLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Billing_InvoiceConfigLineSummarizeTypeLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Billing_InvoiceConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Billing_InvoiceConfigurationLine.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Billing_InvoiceConfigurationLineConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Billing_InvoiceConfigurationLineContractedJobLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Billing_InvoiceConfigurationLineContractedJobLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Billing_InvoiceConfigurationLineLocationLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Billing_InvoiceConfigurationLineLocationLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Billing_InvoiceConfigurationLineRegionLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Billing_InvoiceConfigurationLineRegionLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Billing_InvoiceLine.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Billing_InvoiceLineBillingLineLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Billing_InvoiceLineBillingLineLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Billing_InvoiceLineConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CallManagement_CallGenerationSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CallManagement_CallGenerationSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CallManagement_NotificationSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CallManagement_NotificationSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CallManagement_SLAMonitorJobSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CallManagement_SLAMonitorJobSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_Banknote.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_BanknoteConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_BanknoteSery.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_BanknoteSeryConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_BarcodeScanHistory.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_BarcodeScanHistoryConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_ClieopInterfaceTransactionsLog.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_ClieopInterfaceTransactionsLogConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_ClieopMachine.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_ClieopMachineConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_ContainersBatch.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_ContainersBatchConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_CountResult.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_CountResultConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_CountResultLine.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_CountResultLineConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_DailyHeaderCard.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_DailyHeaderCardConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_DepositCountingStockUpdatingLog.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_DepositCountingStockUpdatingLogConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_HeaderCard.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_HeaderCardConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_HeaderCardStockContainerLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_HeaderCardStockContainerLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_MovementType.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_MovementTypeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_OrdersBatch.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_OrdersBatchConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_PackageOwnerCode.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_PackageOwnerCodeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_PackingLine.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_PackingLineConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_PackingLineWorkstationLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_PackingLineWorkstationLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_PreannouncementContainerLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_PreannouncementContainerLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_ProcessingReasonCode.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_ProcessingReasonCodeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_ProcessingRemark.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_ProcessingRemarkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_ProcessingSession.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_ProcessingSessionConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_ProcessSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_ProcessSettingBagTypeMaterialTypeLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_ProcessSettingBagTypeMaterialTypeLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_ProcessSettingBarcodeFormatLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_ProcessSettingBarcodeFormatLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_ProcessSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_ProcessSetting_Product_Link.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_ProcessSetting_Product_LinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_RawMachineCountResult.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_RawMachineCountResultConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteProcessSetting_MaterialType_Link.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteProcessSetting_MaterialType_LinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteSettingBagTypeLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteSettingBagTypeLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteSettingContainerPrefix.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteSettingContainerPrefixConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteSettingQualificationType.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteSettingQualificationTypeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteSettingStockOwner.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteSettingStockOwnerConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteSetting_Barcode_Format.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteSetting_Barcode_FormatConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteSetting_MaterialType_Link.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteSetting_MaterialType_LinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteStockHistory.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteStockHistoryConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteStockHistoryFlowTotal.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteStockHistoryFlowTotalConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteStockHistoryJobLog.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteStockHistoryJobLogConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteStockMovementHistory.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteStockMovementHistoryConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteStockMovementHistoryProcessUnit.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteStockMovementHistoryProcessUnitConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteStockPositionHistory.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_SiteStockPositionHistoryConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockContainer.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockContainerConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockContainerNumberHistory.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockContainerNumberHistoryConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockLocation.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockLocationConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockLocationSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockLocationSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockLocationSettingMaterialTypeLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockLocationSettingMaterialTypeLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockLocationSettingProductTypeLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockLocationSettingProductTypeLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockLocationType.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockLocationTypeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockOrder.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockOrderConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockOwner.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockOwnerConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockPosition.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockPositionConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockTransaction.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockTransactionConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockTransactionLine.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StockTransactionLineConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_Stream.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StreamConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StreamLocationLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashCenter_StreamLocationLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashControl_JobMaterialSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashControl_JobMaterialSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashControl_JobScheduleSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashControl_JobScheduleSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashControl_JobServiceSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashControl_JobServiceSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashPoint_InsuranceSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CashPoint_InsuranceSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CemacsIntegrationSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CemacsIntegrationSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ClieopJobInstanceSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ClieopJobInstanceSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_CashAvailabilityReportCommonSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_CashAvailabilityReportCommonSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_CashOutTimeHistory.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_CashOutTimeHistoryConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_CashPointInterfaceSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_CashPointInterfaceSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_DailyMachineRecord.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_DailyMachineRecordConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_DailyStockRecord.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_DailyStockRecordConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_EOMCommonSyncSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_EOMCommonSyncSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_EOMCommonSyncSettingsExportFolder.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_EOMCommonSyncSettingsExportFolderConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_EOMMachineTypeSyncSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_EOMMachineTypeSyncSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_ExactCommonSyncSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_ExactCommonSyncSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_ExactCustomerSyncSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_ExactCustomerSyncSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_OfflineTimeHistory.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_OfflineTimeHistoryConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_OptimizationSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_OptimizationSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_OptimizationSettingsViewSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_OptimizationSettingsViewSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_SiebelSyncSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_SiebelSyncSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_SNSCommonSyncSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_SNSCommonSyncSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_StatusMessage.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_StatusMessageConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_Transaction.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_TransactionConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_TransactionImportProductSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_TransactionImportProductSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_TransactionLine.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_TransactionLineConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_TrendForecastingSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CM_TrendForecastingSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CoinMachine.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CoinMachineConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CoinMachineType.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CoinMachineTypeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CommonSyncSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_CommonSyncSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Common_LinkedFile.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Common_LinkedFileConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Common_LockObject.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Common_LockObjectConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ConfigureStockPositionSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ConfigureStockPositionSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ContractedProduct.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ContractedProductConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_CashCenterContractLine.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_CashCenterContractLineConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_Contract.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ContractConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ContractedCount.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ContractedCountConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ContractedJobLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ContractedJobLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ContractedProductLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ContractedProductLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ContractedSLALink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ContractedSLALinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ContractedSLAPenalty.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ContractedSLAPenaltyConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ContractLine.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ContractLineConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ContractLocationGroup.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ContractLocationGroupConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ContractLocationInGroupLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ContractLocationInGroupLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ContractOrderingSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ContractOrderingSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ContractProductSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ContractProductSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_LocationServiceCreationJobSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_LocationServiceCreationJobSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_PackageTypeLink.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_PackageTypeLinkConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_PersonContract.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_PersonContractConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ScheduleLine.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ScheduleLineConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ScheduleSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ScheduleSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ServiceQuantity.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_ServiceQuantityConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_VisitPrice.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Contracts_VisitPriceConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Discrepancy.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_DiscrepancyConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_DynamicsIntegrationCustomerReferenceSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_DynamicsIntegrationCustomerReferenceSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_DynamicsIntegrationLocationTypeSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_DynamicsIntegrationLocationTypeSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_DynamicsIntegrationOrderProductSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_DynamicsIntegrationOrderProductSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_DynamicsIntegrationSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_DynamicsIntegrationSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_EscalateNotification.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_EscalateNotificationConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ExportEncryptionSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ExportEncryptionSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ExportEntitySetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ExportEntitySettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ExportItem.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ExportItemConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ExportStatusUpdatesSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ExportStatusUpdatesSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_FormatSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_FormatSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Group.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_GroupConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_GroupCustomer.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_GroupCustomerConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_GroupLocation.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_GroupLocationConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_GroupPermission.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_GroupPermissionConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_GroupUser.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_GroupUserConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_HemaSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_HemaSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ImportEntitySetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ImportEntitySettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_IntegrationMasterDataImport_BagTypeSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_IntegrationMasterDataImport_BagTypeSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_IntegrationMasterDataImport_IntegrationJobSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_IntegrationMasterDataImport_IntegrationJobSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_IntegrationMasterDataImport_IntegrationLog.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_IntegrationMasterDataImport_IntegrationLogConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_IntegrationMasterDataImport_LocationSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_IntegrationMasterDataImport_LocationSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_IntegrationMasterDataImport_MasterDataOrderProductSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_IntegrationMasterDataImport_MasterDataOrderProductSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Jobs_FileMaintenanceJobSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Jobs_FileMaintenanceJobSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Jobs_JobInfo.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Jobs_JobInfoConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Jobs_JobInstance.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Jobs_JobInstanceConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Jobs_KeepAliveJobSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Jobs_KeepAliveJobSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Jobs_LogSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Jobs_LogSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Jobs_NotificationJobSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Jobs_NotificationJobSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Jobs_Notification_Attachment.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Jobs_Notification_AttachmentConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_LastOrderNumber.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_LastOrderNumberConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_LastPackageNumber.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_LastPackageNumberConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_LocationGroup.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_LocationGroupConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_LocationGroupLocation.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_LocationGroupLocationConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_MachineModel.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_MachineModelConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_OpenTimeDate.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_OpenTimeDateConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_OpenTimeSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_OpenTimeSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_OracleInvoiceExportJobSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_OracleInvoiceExportJobSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_OrderAllocationLog.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_OrderAllocationLogConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_OrderingSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_OrderingSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Ordering_FixedOrderCreationJobSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Ordering_FixedOrderCreationJobSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Ordering_FixedOrderCreationLog.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Ordering_FixedOrderCreationLogConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_PackageType.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_PackageTypeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_PackLifecycleBackupSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_PackLifecycleBackupSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_PasmuntBestandInterfaceDenomination.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_PasmuntBestandInterfaceDenominationConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_PasmuntBestandInterfaceJobInstanceSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_PasmuntBestandInterfaceJobInstanceSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_PostponedValidationServiceSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_PostponedValidationServiceSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ReplicationParty.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ReplicationPartyConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ReplicationType.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ReplicationTypeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Replication_PartyNumber.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Routes_MasterRoute.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Routes_MasterRouteConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Routes_MasterRouteMappingSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Routes_MasterRouteMappingSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Routes_MasterRouteStop.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Routes_MasterRouteStopConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_SecondNotification.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_SecondNotificationConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_SecuritySetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_SecuritySettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Security_ActionVisibilitySetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_Security_ActionVisibilitySettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ServiceType.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ServiceTypeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ServicingCodePrice.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_ServicingCodePriceConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_StatusCode.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_StatusCodeConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_StockPosition.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_StockPositionConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_StockPositionHistory.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_StockPositionHistoryConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_StockPositionHistorySetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_StockPositionHistorySettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_SyncSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_SyncSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_User.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_UserConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_UserPermission.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_UserPermissionConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_UserSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_UserSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_User_Customer.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_User_CustomerConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_User_Location.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_User_LocationConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_WincorInterfaceSetting.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\WP_WincorInterfaceSettingConfiguration.cs">
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\BasicImportEntity.cs" />
+    <Compile Include="Enums\InboundProcess.cs" />
+    <Compile Include="Enums\OrderType.cs" />
+    <Compile Include="Helpers\AuthorizationHelper.cs" />
+    <Compile Include="Helpers\BasicExportHelper.cs" />
+    <Compile Include="Helpers\BasicImportHelper.cs" />
+    <Compile Include="Helpers\BillingHelper.cs" />
+    <Compile Include="Helpers\CashCenterHelper.cs" />
+    <Compile Include="Helpers\CashPointHelper.cs" />
+    <Compile Include="Helpers\CommonHelper.cs" />
+    <Compile Include="Helpers\ConfigurationKeysHelper.cs" />
+    <Compile Include="Helpers\ContractHelper.cs" />
+    <Compile Include="Helpers\EntityToXmlConverterHelper.cs" />
+    <Compile Include="Helpers\FeedingHelper.cs" />
+    <Compile Include="Helpers\FormHelper.cs" />
+    <Compile Include="Helpers\HelperFacade.cs" />
+    <Compile Include="Helpers\Inbound\CapturingFormHelper.cs" />
+    <Compile Include="Helpers\Inbound\ContainerProcessingHelper.cs" />
+    <Compile Include="Helpers\Inbound\CountingFormHelper.cs" />
+    <Compile Include="Helpers\Inbound\DataGenerationHelper.cs" />
+    <Compile Include="Helpers\JobHelper\JobFixture.cs" />
+    <Compile Include="Helpers\MasterRouteHelper.cs" />
+    <Compile Include="Helpers\OrderExportHelper.cs" />
+    <Compile Include="Helpers\PerformanceHelper.cs" />
+    <Compile Include="Helpers\SettingsHelper.cs" />
+    <Compile Include="Helpers\Transport\TransportExportHelper.cs" />
+    <Compile Include="Helpers\Transport\TransportHelper.cs" />
+    <Compile Include="Helpers\Transport\VisitMonitorHelper.cs" />
+    <Compile Include="Helpers\UserSessionHelper.cs" />
+    <Compile Include="Helpers\ViewHelper.cs" />
+    <Compile Include="Builders\BankAccountBuilder.cs" />
+    <Compile Include="Builders\BaseAddressBuilder.cs" />
+    <Compile Include="Builders\BankHolidaySettingBuilder.cs" />
+    <Compile Include="Builders\BankHolidayBuilder.cs" />
+    <Compile Include="Builders\ContractBuilders\PriceLineUnitsRangeBuilder.cs" />
+    <Compile Include="Builders\ProductGroupBuilder.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Builders\ServicingCodeBuilder.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Builders\CitProcessSettingsBuilder\CitProcessSettingBuilder.cs" />
+    <Compile Include="Builders\ContainerTypeBuilder.cs" />
+    <Compile Include="Builders\CashCenterBuilders\StockOrderBuilder.cs" />
+    <Compile Include="Builders\ContractBuilders\PriceLineLevelBuilder.cs" />
+    <Compile Include="Builders\ContractBuilders\ScheduleSettingBuilder.cs" />
+    <Compile Include="Builders\ContractBuilders\ScheduleLineBuilder.cs" />
+    <Compile Include="Builders\ContractBuilders\OrderingSettingServicingJobBuilder.cs" />
+    <Compile Include="Builders\ContractBuilders\ContractProductSettingBuilder.cs" />
+    <Compile Include="Builders\ContractBuilders\ContractOrderingSettingBuilder.cs" />
+    <Compile Include="Builders\ContractBuilders\PriceLineBuilder.cs" />
+    <Compile Include="Builders\ContractBuilders\ContractBuilder.cs" />
+    <Compile Include="Builders\CustomerBankAccountBuilder.cs" />
+    <Compile Include="Builders\DailyDataBuilders\DailyServiceBuilder.cs" />
+    <Compile Include="Builders\DailyDataBuilders\DaiServicingBuilder.cs" />
+    <Compile Include="Builders\TransportOrderInterfaceBuilders\TransportOrderInterfaceBuilder.cs" />
+    <Compile Include="Builders\TransportOrderInterfaceBuilders\TransportOrderInterfaceFacade.cs" />
+    <Compile Include="Builders\TransportOrderInterfaceBuilders\TransportOrderLineInterfaceBuilder.cs" />
+    <Compile Include="Builders\TransportOrderInterfaceBuilders\TransportOrderProductInterfaceBuilder.cs" />
+    <Compile Include="Builders\TransportOrderInterfaceBuilders\TransportOrderServiceInterfaceBuilder.cs" />
+    <Compile Include="Builders\TransportOrderInterfaceBuilders\TransportOrderUpdateInterfaceBuilder.cs" />
+    <Compile Include="Builders\TransportOrderBuilders\CItProcessingHistoryBuilder.cs" />
+    <Compile Include="Builders\TransportOrderBuilders\CitProcessingHistoryExceptionBuilder.cs" />
+    <Compile Include="Builders\DailyDataBuilders\DaiCoinBuilder.cs" />
+    <Compile Include="Builders\DailyDataBuilders\DailyStopBuilder.cs" />
+    <Compile Include="Builders\DailyDataBuilders\DailyDataFacade.cs" />
+    <Compile Include="Builders\DailyDataBuilders\DaiPackBuilder.cs" />
+    <Compile Include="Builders\DailyDataBuilders\HisPackBuilder.cs" />
+    <Compile Include="Builders\CashPointModelBuilder.cs" />
+    <Compile Include="Builders\CashPointTypeBuilder.cs" />
+    <Compile Include="Builders\ServiceTypeBuilder.cs" />
+    <Compile Include="Builders\CashPointBuilder.cs" />
+    <Compile Include="Builders\CustomerBuilder.cs" />
+    <Compile Include="Builders\FeedingBuilders\FeedingBuilderFacade.cs" />
+    <Compile Include="Builders\FeedingBuilders\ServiceOrderFeedingBuilder.cs" />
+    <Compile Include="Builders\FeedingBuilders\ServiceOrderListFeedingBuilder.cs" />
+    <Compile Include="Builders\GroupBuilder.cs" />
+    <Compile Include="Builders\LocationBuilder.cs" />
+    <Compile Include="Builders\LocationTypeBuilder.cs" />
+    <Compile Include="Builders\MasterDataImportBuilder\MasterDataImportService.cs" />
+    <Compile Include="Builders\MasterRouteBuilder.cs" />
+    <Compile Include="Builders\MasterRouteStopBuilder.cs" />
+    <Compile Include="Builders\MaterialBuilder.cs" />
+    <Compile Include="Builders\OrderBuilder.cs" />
+    <Compile Include="Builders\CashCenterBuilders\CashCenterProcessSettingBuilder.cs" />
+    <Compile Include="Builders\DataFacade.cs" />
+    <Compile Include="Builders\ProductBuilder.cs" />
+    <Compile Include="Builders\SiteBuilder.cs" />
+    <Compile Include="Builders\CashCenterBuilders\SiteSettingContainerPrefixBuilder.cs" />
+    <Compile Include="Builders\CashCenterBuilders\CashCenterSiteSettingBuilder.cs" />
+    <Compile Include="Builders\CashCenterBuilders\StockContainerBuilder.cs" />
+    <Compile Include="Builders\StockPositionBuilder.cs" />
+    <Compile Include="Builders\TransportOrderBuilders\TransportOrderBuilder.cs" />
+    <Compile Include="Builders\TransportOrderBuilders\TransportOrderProductBuilder.cs" />
+    <Compile Include="Builders\TransportOrderBuilders\TransportOrderServBuilder.cs" />
+    <Compile Include="Model\AutomationValidatedFeedingLog.cs" />
+    <Compile Include="Pages\Accounting\BillingLinesPage.cs" />
+    <Compile Include="Pages\Accounting\CashFlowInformationPage.cs" />
+    <Compile Include="Pages\Accounting\DiscrepanciesPage.cs" />
+    <Compile Include="Pages\Accounting\InvoiceLinesPage.cs" />
+    <Compile Include="Pages\Accounting\OrderPreAnnouncementsPage.cs" />
+    <Compile Include="Pages\Accounting\PreCreditingValueViewPage.cs" />
+    <Compile Include="Pages\Accounting\ReBillingPage.cs" />
+    <Compile Include="Pages\Accounting\ReconciliationViewPage.cs" />
+    <Compile Include="Pages\CashPoint\CashAvailabilityPage.cs" />
+    <Compile Include="Pages\CashPoint\CashPointManagePage.cs" />
+    <Compile Include="Pages\CashPoint\CashPointMonitorPage.cs" />
+    <Compile Include="Pages\CashPoint\CashPointUptimePage.cs" />
+    <Compile Include="Pages\CashPoint\CollectedAndIssuedValuesPage.cs" />
+    <Compile Include="Pages\CashPoint\ErrorsPerCashPointPage.cs" />
+    <Compile Include="Pages\CashPoint\ErrorsPerCategoryPage.cs" />
+    <Compile Include="Pages\CashPoint\EventsViewPage.cs" />
+    <Compile Include="Pages\CashPoint\ResidualPercentagePage.cs" />
+    <Compile Include="Pages\CashPoint\StatusMessagesPage.cs" />
+    <Compile Include="Pages\CashPoint\StockValuePage.cs" />
+    <Compile Include="Pages\CashPoint\TransactionDetailsPage.cs" />
+    <Compile Include="Pages\CashPoint\TransactionsPage.cs" />
+    <Compile Include="Pages\CashPoint\TransactionsPerCashPointPage.cs" />
+    <Compile Include="Pages\CashPoint\EventPage.cs" />
+    <Compile Include="Pages\Inbound\CapturingPage.cs" />
+    <Compile Include="Pages\Inbound\ContainerBatchesPage.cs" />
+    <Compile Include="Pages\Inbound\CountingInProgressPage.cs" />
+    <Compile Include="Pages\Inbound\CountingPage.cs" />
+    <Compile Include="Pages\HomePage.cs" />
+    <Compile Include="Pages\Inbound\CountOrdersPage.cs" />
+    <Compile Include="Pages\Inbound\FirstStepCountResultsPage.cs" />
+    <Compile Include="Pages\Inbound\PreAnnouncementsPage.cs" />
+    <Compile Include="Pages\Inbound\ReceivedContainersPage.cs" />
+    <Compile Include="Pages\Inbound\SecondStepCountResultsPage.cs" />
+    <Compile Include="Pages\Inbound\StockOwnerCountResultsPage.cs" />
+    <Compile Include="Pages\LoginPage.cs" />
+    <Compile Include="Pages\Order\OrdersPage.cs" />
+    <Compile Include="Pages\Order\OrdersPerDenominationPage.cs" />
+    <Compile Include="Pages\Order\UserOrdersPage.cs" />
+    <Compile Include="Pages\Outbound\ContainersInPackingPage.cs" />
+    <Compile Include="Pages\Outbound\DispatchOrdersViewPage.cs" />
+    <Compile Include="Pages\Outbound\OrderBatchesPage.cs" />
+    <Compile Include="Pages\Outbound\OutboundOrdersViewPage.cs" />
+    <Compile Include="Pages\Stock\ActualStockValuePage.cs" />
+    <Compile Include="Pages\Stock\ContainerMovementsPage.cs" />
+    <Compile Include="Pages\Stock\StockContainersPage.cs" />
+    <Compile Include="Pages\Stock\StockDashboardPage.cs" />
+    <Compile Include="Pages\Stock\StockTransactionsPage.cs" />
+    <Compile Include="Pages\Stock\StockValueHistoryPage.cs" />
+    <Compile Include="Pages\Stock\TakeIntoStorageOrdersViewPage.cs" />
+    <Compile Include="Pages\Stock\ValueMovementsPage.cs" />
+    <Compile Include="Pages\ViewPage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Core\BaseTest.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WebServiceFeedings\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\BasicImport\BasicImportFixture.cs" />
+    <Compile Include="Tests\Billing\ContractBillingTests.cs" />
+    <Compile Include="Tests\Billing\PreannauncementAndBillingTests.cs" />
+    <Compile Include="Tests\Billing\TransportBillingTests.cs" />
+    <Compile Include="Tests\CRUD\BaseDataCrudTests\BagTypeCrudTests.cs" />
+    <Compile Include="Tests\CRUD\BaseDataCrudTests\BankAccountCrudTests.cs" />
+    <Compile Include="Tests\CRUD\CashCenterProcessSettingsCrudTests\CashCenterProcessSettingsCrudTests.cs" />
+    <Compile Include="Tests\CRUD\BaseDataCrudTests\CashCenterSiteSettingsCrudTests.cs" />
+    <Compile Include="Tests\CRUD\BaseDataCrudTests\CashPointTypeCrudTests.cs" />
+    <Compile Include="Tests\CRUD\BaseDataCrudTests\CITProcessSettingsCrudTests.cs" />
+    <Compile Include="Tests\CRUD\BaseDataCrudTests\ContactPersonCrudTests.cs" />
+    <Compile Include="Tests\CRUD\BaseDataCrudTests\LocationTypeCrudTests.cs" />
+    <Compile Include="Tests\CRUD\BaseDataCrudTests\MaterialCrudTests.cs" />
+    <Compile Include="Tests\CRUD\BaseDataCrudTests\ProductGroupsCrudTests.cs" />
+    <Compile Include="Tests\CRUD\BaseDataCrudTests\ProductCrudTests.cs" />
+    <Compile Include="Tests\CRUD\BaseDataCrudTests\ServiceTypeCrudTests.cs" />
+    <Compile Include="Tests\CRUD\BaseDataCrudTests\SiteCrudTests.cs" />
+    <Compile Include="Tests\Feeding\ExchangeRateFeedingTests.cs" />
+    <Compile Include="Tests\Feeding\LocationServicingTimeWindowFeedingTest.cs" />
+    <Compile Include="Tests\Feeding\RouteListFeedingTests.cs" />
+    <Compile Include="Tests\Feeding\RouteListFixture.cs" />
+    <Compile Include="Tests\Feeding\StockContainerListTests.cs" />
+    <Compile Include="Tests\Fixtures\StockContainerFixture.cs" />
+    <Compile Include="Tests\Fixtures\OrderFixture.cs" />
+    <Compile Include="Tests\Import\OrderImportFormatB\FileCreationService.cs" />
+    <Compile Include="Tests\Import\OrderImportFormatB\FormatBOrderCreationTests.cs" />
+    <Compile Include="Tests\Import\OrderImportFormatB\PostCodesImportTests.cs" />
+    <Compile Include="Tests\Inbound\DefineServiceOrderStatus\DefineServiceOrderStatusTests.cs" />
+    <Compile Include="Tests\OrderExport\MaterialExportTempItem.cs" />
+    <Compile Include="Tests\OrderExport\OrderExportTests.cs" />
+    <Compile Include="Tests\OrderExport\ProductExportTempItem.cs" />
+    <Compile Include="Tests\Outbound\DefineServiceOrderStatus\DefineServiceOrderTests.cs" />
+    <Compile Include="Tests\Transport\AutomatedLocationServicesCreationTests.cs" />
+    <Compile Include="Tests\Transport\DefineServiceOrderStatus\DefineServiceOrderStatusTests.cs" />
+    <Compile Include="Tests\Transport\ExceptionManagement\ResolveCitProcessingHistoryExceptionTests.cs" />
+    <Compile Include="Tests\Transport\PackageLifeCycle\PlcFixture.cs" />
+    <Compile Include="Tests\Transport\PackageLifeCycle\PlcForNewServiceOrderTests.cs" />
+    <Compile Include="Tests\Transport\PackageLifeCycle\PlcForNewTransportOrderTests.cs" />
+    <Compile Include="Tests\Transport\TransportExport\TransportExportFixture.cs" />
+    <Compile Include="Tests\Transport\TransportExport\TransportOrderExportTests.cs" />
+    <Compile Include="Tests\Transport\TransportInterface\ProcessingOfComplexTypeForCreateTests.cs" />
+    <Compile Include="Tests\Transport\TransportInterface\TransportOrderJobFixture.cs" />
+    <Compile Include="Tests\UI\AccountingModuleViewTests.cs" />
+    <Compile Include="Tests\Feeding\CashPointTransactionsTests.cs" />
+    <Compile Include="Tests\Billing\BillingTestFixture.cs" />
+    <Compile Include="Tests\Billing\OrderingBillingTests.cs" />
+    <Compile Include="Tests\CRUD\BaseDataCrudTests\CustomerCrudTests.cs" />
+    <Compile Include="Tests\CRUD\BaseDataCrudTests\LocationCrudTests.cs" />
+    <Compile Include="Tests\CRUD\TransportCrudTests.cs" />
+    <Compile Include="Tests\Feeding\CustomerListFeedingTest.cs" />
+    <Compile Include="Tests\CRUD\DataBuildingTests.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Tests\Feeding\LocationListFeedingTest.cs" />
+    <Compile Include="Tests\Fixtures\BaseDataFixture.cs" />
+    <Compile Include="Tests\Fixtures\CashPointFixture.cs" />
+    <Compile Include="Tests\Matching\MatchBankAccountTests.cs" />
+    <Compile Include="Tests\Matching\MatchDebtorTests.cs" />
+    <Compile Include="Tests\Matching\MatchStockContainerTests.cs" />
+    <Compile Include="Tests\Feeding\ServiceOrderFeedingTests.cs" />
+    <Compile Include="Tests\Feeding\ServiceOrderListTests.cs" />
+    <Compile Include="Tests\BasicExport\BasicExportTest.cs" />
+    <Compile Include="Tests\Fixtures\CleanUpFixture.cs" />
+    <Compile Include="Tests\Fixtures\ServiceOrderCleanUpFixture.cs" />
+    <Compile Include="Tests\BasicImport\BasicImportTests.cs" />
+    <Compile Include="Tests\UI\CapturingFormTests.cs" />
+    <Compile Include="Tests\UI\CashPointModuleTests.cs" />
+    <Compile Include="Tests\UI\CountingFormTests.cs" />
+    <Compile Include="Tests\UI\InboundViewTest.cs" />
+    <Compile Include="Tests\UI\LogIn.cs" />
+    <Compile Include="Tests\Transport\AutomatedLocationServicesCreationTestFixture.cs" />
+    <Compile Include="Tests\Transport\OrderCitAllocationTestFixture.cs" />
+    <Compile Include="Tests\Transport\OrderCitAllocationTests.cs" />
+    <Compile Include="Tests\UI\OrderViewTest.cs" />
+    <Compile Include="Tests\UI\OutboundViewTests.cs" />
+    <Compile Include="Tests\UI\StockModuleViewTests.cs" />
+    <Compile Include="Tests\Transport\TransportInterface\ContractedReplenishmentDefinitionTests.cs" />
+    <Compile Include="Tests\Transport\TransportInterface\TransportOrderInterfaceTests.cs" />
+    <Compile Include="Tests\Transport\TransportInterface\TransportOrderLineInterfaceTests.cs" />
+    <Compile Include="Tests\Transport\TransportInterface\TransportOrderProductInterfaceTests.cs" />
+    <Compile Include="Tests\Transport\TransportInterface\TransportOrderServiceInterfaceTests.cs" />
+    <Compile Include="Tests\Transport\TransportInterface\TransportOrderUpdateInterfaceTests.cs" />
+    <Compile Include="Tests\Transport\VisitMonitor\EditVisitMonitorFormTests.cs" />
+    <Compile Include="Tests\Transport\VisitMonitor\VisiMonitorProductsFrameTests.cs" />
+    <Compile Include="Tests\Transport\VisitMonitor\VisitMonitorCancellationCodeFrameTests.cs" />
+    <Compile Include="Tests\Transport\VisitMonitor\VisitMonitorContainersViewTests.cs" />
+    <Compile Include="Tests\Transport\VisitMonitor\VisitMonitorFrameTests.cs" />
+    <Compile Include="Tests\Transport\VisitMonitor\VisitMonitorServicesFrameTests.cs" />
+    <Compile Include="Utils\ValueGenerator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\bag_type.xsd">
+      <LastGenOutput>bag_type.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\BankAccountImport.xsd">
+      <LastGenOutput>BankAccountImport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\branch.xsd">
+      <LastGenOutput>branch.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\customer.xsd">
+      <LastGenOutput>customer.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\daily.xsd">
+      <LastGenOutput>daily.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\dai_atm.xsd">
+      <LastGenOutput>dai_atm.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\dai_coin.xsd">
+      <LastGenOutput>dai_coin.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\dai_emp.xsd">
+      <LastGenOutput>dai_emp.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\dai_equip.xsd">
+      <LastGenOutput>dai_equip.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\dai_line.xsd">
+      <LastGenOutput>dai_line.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\dai_pack.xsd">
+      <LastGenOutput>dai_pack.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\dai_serv.xsd">
+      <LastGenOutput>dai_serv.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\dai_servicingcode.xsd">
+      <LastGenOutput>dai_servicingcode.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\his_pack.xsd">
+      <LastGenOutput>his_pack.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\location.xsd">
+      <LastGenOutput>location.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\LocationType.xsd">
+      <LastGenOutput>LocationType.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\loc_hol.xsd">
+      <LastGenOutput>loc_hol.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\loc_serv.xsd">
+      <LastGenOutput>loc_serv.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\loc_type.xsd">
+      <LastGenOutput>loc_type.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\Material.xsd">
+      <LastGenOutput>Material.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\Product.xsd">
+      <LastGenOutput>Product.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\reason.xsd">
+      <LastGenOutput>reason.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\ServiceOrder.xsd">
+      <LastGenOutput>ServiceOrder.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\ServiceOrderUpdate.xsd">
+      <LastGenOutput>ServiceOrderUpdate.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\ServicingCode.xsd">
+      <LastGenOutput>ServicingCode.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\SOline.xsd">
+      <LastGenOutput>SOline.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\SOProduct.xsd">
+      <LastGenOutput>SOProduct.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\SOService.xsd">
+      <LastGenOutput>SOService.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\WP_BaseData_Automate.xsd" />
+    <None Include="bin\Debug\App_Data\JobSchemas\Incoming\WP_CM_StatusMessage.xsd" />
+    <None Include="bin\Debug\App_Data\JobSchemas\Outgoing\atm_type.xsd">
+      <LastGenOutput>atm_type.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Outgoing\customer.xsd">
+      <LastGenOutput>customer.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Outgoing\location.xsd">
+      <LastGenOutput>location.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Outgoing\loc_serv.xsd">
+      <LastGenOutput>loc_serv.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Outgoing\master.xsd">
+      <LastGenOutput>master.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Outgoing\mas_line.xsd">
+      <LastGenOutput>mas_line.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Outgoing\Material.xsd">
+      <LastGenOutput>Material.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Outgoing\ProdComposition.xsd">
+      <LastGenOutput>ProdComposition.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Outgoing\ProdContent.xsd">
+      <LastGenOutput>ProdContent.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Outgoing\Product.xsd">
+      <LastGenOutput>Product.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Outgoing\ServiceOrder.xsd">
+      <LastGenOutput>ServiceOrder.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Outgoing\SOline.xsd">
+      <LastGenOutput>SOline.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Outgoing\SOProduct.xsd">
+      <LastGenOutput>SOProduct.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Outgoing\SOService.xsd">
+      <LastGenOutput>SOService.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\App_Data\JobSchemas\Outgoing\WP_Call.xsd">
+      <LastGenOutput>WP_Call.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Fakes Include="Fakes\Cwc.Common.fakes" />
+    <Fakes Include="Fakes\Cwc.CashCenter.fakes" />
+    <Fakes Include="Fakes\Cwc.Transport.fakes" />
+    <None Include="DataModel\Database.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Database.cs</LastGenOutput>
+    </None>
+    <None Include="DataModel\EF.Reverse.POCO.Core.ttinclude" />
+    <None Include="DataModel\EF.Reverse.POCO.ttinclude" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\WebServiceFeedings\CWC.AutoTests.WebServiceFeedings.SendFeedingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WebServiceFeedings\WebServiceFeedings.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WebServiceFeedings\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\WebServiceFeedings\configuration.svcinfo" />
+    <None Include="Service References\WebServiceFeedings\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\WebServiceFeedings\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="App_Licenses">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\App_Licenses.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Afwa">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Afwa.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Afwa.UI">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Afwa.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Archiving, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Archiving.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Assets, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Assets.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Assets.UI">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Assets.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.BaseData">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.BaseData.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.BaseData.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.BaseData.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.BaseData.Web">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.BaseData.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Billing">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Billing.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Billing.UI">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Billing.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Billing.Web">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Billing.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.CallManagement">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.CallManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.CallManagement.UI">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.CallManagement.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.CallManagement.Web">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.CallManagement.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Cash360">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Cash360.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.CashCenter">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.CashCenter.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.CashCenter.1.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\Cwc.CashCenter.1.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.CashCenter.Integration">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.CashCenter.Integration.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.CashCenter.NumeronWcfClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ce567d5877e2195c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.CashCenter.NumeronWcfClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.CashCenter.UI">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.CashCenter.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.CashCenter.Web">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.CashCenter.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.CashCloud.WebApi">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.CashCloud.WebApi.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.CashControl">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.CashControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.CashPoint">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.CashPoint.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.CashPoint.Web">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.CashPoint.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.CctvSystem">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.CctvSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Cemacs">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Cemacs.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Coin">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Coin.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Coin.UI">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Coin.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Common">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Common.1.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\Cwc.Common.1.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Common.UI">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Common.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Constants">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Constants.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Contracts">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Contracts.UI">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Contracts.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Contracts.Web">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Contracts.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Dynamics">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Dynamics.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Feedings">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Feedings.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.FeedingsEncryptor">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.FeedingsEncryptor.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Hema">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Hema.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Integration.BankAccountImport">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Integration.BankAccountImport.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Integration.Common">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Integration.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Integration.OrderImportFormatA">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Integration.OrderImportFormatA.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Integration.OrderImportFormatA.Web">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Integration.OrderImportFormatA.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Integration.OrderImportFormatB">
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Integration.OrderImportFormatB.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Integration.OrderImportFormatB.Web">
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Integration.OrderImportFormatB.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Jobs">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Jobs.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Localization">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.MasterDataImport">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.MasterDataImport.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.OrderFeedings, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.OrderFeedings.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.OrderImport">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.OrderImport.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Ordering">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Ordering.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Ordering.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Ordering.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Ordering.Web">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Ordering.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.OutboundExport">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.OutboundExport.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Performances">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Performances.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Performances.UI">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Performances.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Reconciliation">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Reconciliation.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Reconciliation.Web">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Reconciliation.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Replication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Replication.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Routes">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Routes.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Routes.UI">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Routes.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Security">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.SoftwareKeyManaging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9dec37ec80dadfc4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.SoftwareKeyManaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Sync">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Sync.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Transport">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Transport.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Transport.1.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\Cwc.Transport.1.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Transport.Web">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Transport.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Transtrack">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Transtrack.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.VersionInfo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.VersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Wincor">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Wincor.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.3.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.Serialization" />
+    <Reference Include="TechTalk.SpecFlow, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecFlow.2.3.1\lib\net45\TechTalk.SpecFlow.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.8.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.8.0\lib\net45\WebDriver.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.abstractions.2.0.2\lib\net35\xunit.abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.assert, Version=2.4.0.4049, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.assert.2.4.0\lib\netstandard1.1\xunit.assert.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.core, Version=2.4.0.4049, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.extensibility.core.2.4.0\lib\net452\xunit.core.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.execution.desktop, Version=2.4.0.4049, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.extensibility.execution.2.4.0\lib\net452\xunit.execution.desktop.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\Bin\" />
+    <Folder Include="bin\Debug\Logs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\DebugApp_Data\BillingConfiguration.xml" />
+    <Content Include="bin\DebugApp_Data\References.xml" />
+    <Content Include="bin\DebugApp_Data\ReferencesConfiguration.xml" />
+    <Content Include="FakesAssemblies\Cwc.CashCenter.1.0.0.0.Fakes.dll" />
+    <Content Include="FakesAssemblies\Cwc.Common.1.0.0.0.Fakes.dll" />
+    <Content Include="FakesAssemblies\Cwc.Transport.1.0.0.0.Fakes.dll" />
+    <Content Include="Builders\BuilderTemplate\BuilderTemplate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BuilderTemplate.EntityBuilderClassName.cs</LastGenOutput>
+    </Content>
+    <None Include="Service References\WebServiceFeedings\WebServiceFeedings.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <TestAssemblies Include="**/bin/**/*.tests.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\xunit.analyzers.0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\xunit.core.2.4.0\build\xunit.core.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.4.0\build\xunit.core.props'))" />
+    <Error Condition="!Exists('..\packages\xunit.core.2.4.0\build\xunit.core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.4.0\build\xunit.core.targets'))" />
+    <Error Condition="!Exists('..\packages\xunit.runner.visualstudio.2.4.0\build\net20\xunit.runner.visualstudio.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.runner.visualstudio.2.4.0\build\net20\xunit.runner.visualstudio.props'))" />
+  </Target>
+  <Import Project="..\packages\xunit.core.2.4.0\build\xunit.core.targets" Condition="Exists('..\packages\xunit.core.2.4.0\build\xunit.core.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

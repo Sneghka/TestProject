@@ -1,0 +1,8 @@
+E:\TFS\Test_5.03\v5.03\.vs\v5.03\lut\0\b\WebServiceApp\bin\App_Code\WebServiceFeedings.cs
+E:\TFS\Test_5.03\v5.03\.vs\v5.03\lut\0\b\WebServiceApp\bin\WebServiceApp.dll.config
+E:\TFS\Test_5.03\v5.03\.vs\v5.03\lut\0\b\WebServiceApp\bin\WebServiceApp.dll
+E:\TFS\Test_5.03\v5.03\.vs\v5.03\lut\0\b\WebServiceApp\bin\WebServiceApp.pdb
+E:\TFS\Test_5.03\v5.03\.vs\v5.03\lut\0\i\WebServiceApp\Debug\WebServiceApp.csprojResolveAssemblyReference.cache
+E:\TFS\Test_5.03\v5.03\.vs\v5.03\lut\0\i\WebServiceApp\Debug\WebServiceApp.csproj.CoreCompileInputs.cache
+E:\TFS\Test_5.03\v5.03\.vs\v5.03\lut\0\i\WebServiceApp\Debug\WebServiceApp.dll
+E:\TFS\Test_5.03\v5.03\.vs\v5.03\lut\0\i\WebServiceApp\Debug\WebServiceApp.pdb

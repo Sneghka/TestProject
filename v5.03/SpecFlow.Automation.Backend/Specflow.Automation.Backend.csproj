@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\xunit.runner.visualstudio.2.4.0\build\net20\xunit.runner.visualstudio.props" Condition="Exists('..\packages\xunit.runner.visualstudio.2.4.0\build\net20\xunit.runner.visualstudio.props')" />
+  <Import Project="..\packages\xunit.core.2.4.0\build\xunit.core.props" Condition="Exists('..\packages\xunit.core.2.4.0\build\xunit.core.props')" />
+  <Import Project="..\packages\SpecFlow.2.2.1\tools\TechTalk.SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.2.2.1\tools\TechTalk.SpecFlow.targets')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{770D2B71-5355-4010-B1B5-4AF71A3ED9EB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Specflow.Automation.Backend</RootNamespace>
+    <AssemblyName>Specflow.Automation.Backend</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.87.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.87.1\lib\net40\ClosedXML.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Cwc.BaseData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.BaseData.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Billing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Billing.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.CallManagement">
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.CallManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.CashCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.CashCenter.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.CashCenter.Integration">
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.CashCenter.Integration.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.CashPoint">
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.CashPoint.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Coin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Coin.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Constants, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Constants.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Feedings, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Feedings.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Integration.BankAccountImport">
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Integration.BankAccountImport.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Integration.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Integration.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Integration.OrderImportFormatA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Integration.OrderImportFormatA.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Integration.OrderImportFormatA.Web">
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Integration.OrderImportFormatA.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Integration.OrderImportFormatB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Integration.OrderImportFormatB.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Integration.OrderImportFormatB.Web">
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Integration.OrderImportFormatB.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Jobs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Jobs.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Localization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.OrderFeedings, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.OrderFeedings.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.OrderImport">
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.OrderImport.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Ordering, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Ordering.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Performances">
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Performances.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Reconciliation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Reconciliation.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Replication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Replication.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Routes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Routes.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Sync, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Sync.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Transport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Transport.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Transport.Web, Version=5.3.0.54963, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Transport.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.VersionInfo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.VersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TechTalk.SpecFlow, Version=2.4.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecFlow.2.4.0\lib\net45\TechTalk.SpecFlow.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.abstractions.2.0.2\lib\net35\xunit.abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.assert, Version=2.4.0.4049, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.assert.2.4.0\lib\netstandard1.1\xunit.assert.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.core, Version=2.4.0.4049, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.extensibility.core.2.4.0\lib\net452\xunit.core.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.execution.desktop, Version=2.4.0.4049, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.extensibility.execution.2.4.0\lib\net452\xunit.execution.desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Z.EntityFramework.Plus.EF6, Version=1.7.14.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.EntityFramework.Plus.EF6.1.7.14\lib\net45\Z.EntityFramework.Plus.EF6.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Features\BillingCallManagement.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BillingCallManagement.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\CashCenterFirstStepCounting.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CashCenterFirstStepCounting.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\CashCenterOrderAllocation.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CashCenterOrderAllocation.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\CashCenterOrdersBatches.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CashCenterOrdersBatches.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\OrderCitAllocation.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderCitAllocation.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\ServiceOrderImportFormatA.feature.cs">
+      <DependentUpon>ServiceOrderImportFormatA.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\ServiceOrderImportFormatB.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServiceOrderImportFormatB.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\SpecFlowFeature1.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpecFlowFeature1.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\CashCenterOrderAllocationHelper.cs" />
+    <Compile Include="Helpers\OrderCitAllocationHelper.cs" />
+    <Compile Include="Helpers\ServiceOrderImportFormatAHelper.cs" />
+    <Compile Include="Helpers\ServiceOrderImportFormatBHelper.cs" />
+    <Compile Include="Hooks\BaseDataConfigurationHooks.cs" />
+    <Compile Include="Hooks\CallManagementDataConfigurationHooks.cs" />
+    <Compile Include="Hooks\CashCenterDataConfigurationHooks.cs" />
+    <Compile Include="Hooks\CashPointDataConfigurationHooks.cs" />
+    <Compile Include="Hooks\ContractDataConfigurationHooks.cs" />
+    <Compile Include="Hooks\InitHooks.cs" />
+    <Compile Include="Hooks\ServiceOrderImportFormatAHooks.cs" />
+    <Compile Include="Hooks\ServiceOrderImportFormatBHooks.cs" />
+    <Compile Include="Hooks\TransportDataConfigurationHooks.cs" />
+    <Compile Include="Model\OrderImportFormatBItem.cs" />
+    <Compile Include="Model\ServiceOrderImportFormaBContainer.cs" />
+    <Compile Include="Model\ServiceOrderContainer.cs" />
+    <Compile Include="Model\ServiceOrderImportFormatARow.cs" />
+    <Compile Include="Model\ServiceOrderImportFormatAContainer.cs" />
+    <Compile Include="Model\ServiceOrderImportFormatBCloseRecord.cs" />
+    <Compile Include="Model\ServiceOrderImportFormatBLeadingRecord.cs" />
+    <Compile Include="Model\ServiceOrderImportFormatBOrderedDeliveryInfo.cs" />
+    <Compile Include="Model\ServiceOrderImportFormatBOrderItemRecord.cs" />
+    <Compile Include="Model\ServiceOrderImportFormatBOrderRecord.cs" />
+    <Compile Include="Steps\BillingCallManagementSteps.cs" />
+    <Compile Include="Steps\CashCenterOrderAllocationSteps.cs" />
+    <Compile Include="Steps\CashCenterOrdersBatchesSteps.cs" />
+    <Compile Include="Steps\OrderCitAllocationSteps.cs" />
+    <Compile Include="Steps\ServiceOrderImportFormatASteps.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Steps\ServiceOrderProcessingSteps.cs" />
+    <Compile Include="Steps\ServiceOrderImportFormatBSteps.cs" />
+    <Compile Include="Steps\StepArgumentTransformer.cs" />
+    <Compile Include="Utils\ExtensionMethods.cs" />
+    <Compile Include="Utils\TableExtensions.cs" />
+    <Compile Include="ValueRetrievers\ProductValueRetriever.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Features\BillingCallManagement.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>BillingCallManagement.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\CashCenterFirstStepCounting.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CashCenterFirstStepCounting.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\CashCenterOrderAllocation.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CashCenterOrderAllocation.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\CashCenterOrdersBatches.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CashCenterOrdersBatches.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\OrderCitAllocation.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>OrderCitAllocation.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\ServiceOrderImportFormatA.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ServiceOrderImportFormatA.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\ServiceOrderImportFormatB.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ServiceOrderImportFormatB.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\SpecFlowFeature1.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SpecFlowFeature1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CWC.AutoTests\CWC.AutoTests.csproj">
+      <Project>{8c402bfc-c99c-4fe1-94cf-48d476001cbf}</Project>
+      <Name>CWC.AutoTests</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\DebugApp_Data\BillingConfiguration.xml" />
+    <Content Include="bin\DebugApp_Data\References.xml" />
+    <Content Include="bin\DebugApp_Data\ReferencesConfiguration.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\Bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\xunit.analyzers.0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\xunit.core.2.4.0\build\xunit.core.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.4.0\build\xunit.core.props'))" />
+    <Error Condition="!Exists('..\packages\xunit.core.2.4.0\build\xunit.core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.4.0\build\xunit.core.targets'))" />
+    <Error Condition="!Exists('..\packages\SpecFlow.2.4.0\build\SpecFlow.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SpecFlow.2.4.0\build\SpecFlow.targets'))" />
+    <Error Condition="!Exists('..\packages\xunit.runner.visualstudio.2.4.0\build\net20\xunit.runner.visualstudio.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.runner.visualstudio.2.4.0\build\net20\xunit.runner.visualstudio.props'))" />
+  </Target>
+  <Import Project="..\packages\xunit.core.2.4.0\build\xunit.core.targets" Condition="Exists('..\packages\xunit.core.2.4.0\build\xunit.core.targets')" />
+  <Import Project="..\packages\SpecFlow.2.4.0\build\SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.2.4.0\build\SpecFlow.targets')" />
+</Project>

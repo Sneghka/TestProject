@@ -1,0 +1,121 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CWC.AutoTests", "CWC.AutoTests\CWC.AutoTests.csproj", "{8C402BFC-C99C-4FE1-94CF-48D476001CBF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{884F9882-4998-40DE-A2FB-BD96419BFD92}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Specflow.Automation.UI", "SpecFlow.Automation.UI\Specflow.Automation.UI.csproj", "{D1E2DFFE-43F0-4605-AD66-9FAAB7FA4B4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Specflow.Automation.Backend", "SpecFlow.Automation.Backend\Specflow.Automation.Backend.csproj", "{770D2B71-5355-4010-B1B5-4AF71A3ED9EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceApp", "WebServiceApp\WebServiceApp.csproj", "{AD0815D3-8490-4FA0-834C-F535303E0087}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C402BFC-C99C-4FE1-94CF-48D476001CBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C402BFC-C99C-4FE1-94CF-48D476001CBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C402BFC-C99C-4FE1-94CF-48D476001CBF}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{8C402BFC-C99C-4FE1-94CF-48D476001CBF}.Debug|ARM.Build.0 = Debug|Any CPU
+		{8C402BFC-C99C-4FE1-94CF-48D476001CBF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8C402BFC-C99C-4FE1-94CF-48D476001CBF}.Debug|x64.Build.0 = Debug|Any CPU
+		{8C402BFC-C99C-4FE1-94CF-48D476001CBF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8C402BFC-C99C-4FE1-94CF-48D476001CBF}.Debug|x86.Build.0 = Debug|Any CPU
+		{8C402BFC-C99C-4FE1-94CF-48D476001CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C402BFC-C99C-4FE1-94CF-48D476001CBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C402BFC-C99C-4FE1-94CF-48D476001CBF}.Release|ARM.ActiveCfg = Release|Any CPU
+		{8C402BFC-C99C-4FE1-94CF-48D476001CBF}.Release|ARM.Build.0 = Release|Any CPU
+		{8C402BFC-C99C-4FE1-94CF-48D476001CBF}.Release|x64.ActiveCfg = Release|Any CPU
+		{8C402BFC-C99C-4FE1-94CF-48D476001CBF}.Release|x64.Build.0 = Release|Any CPU
+		{8C402BFC-C99C-4FE1-94CF-48D476001CBF}.Release|x86.ActiveCfg = Release|Any CPU
+		{8C402BFC-C99C-4FE1-94CF-48D476001CBF}.Release|x86.Build.0 = Release|Any CPU
+		{D1E2DFFE-43F0-4605-AD66-9FAAB7FA4B4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1E2DFFE-43F0-4605-AD66-9FAAB7FA4B4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1E2DFFE-43F0-4605-AD66-9FAAB7FA4B4A}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{D1E2DFFE-43F0-4605-AD66-9FAAB7FA4B4A}.Debug|ARM.Build.0 = Debug|Any CPU
+		{D1E2DFFE-43F0-4605-AD66-9FAAB7FA4B4A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D1E2DFFE-43F0-4605-AD66-9FAAB7FA4B4A}.Debug|x64.Build.0 = Debug|Any CPU
+		{D1E2DFFE-43F0-4605-AD66-9FAAB7FA4B4A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D1E2DFFE-43F0-4605-AD66-9FAAB7FA4B4A}.Debug|x86.Build.0 = Debug|Any CPU
+		{D1E2DFFE-43F0-4605-AD66-9FAAB7FA4B4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1E2DFFE-43F0-4605-AD66-9FAAB7FA4B4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1E2DFFE-43F0-4605-AD66-9FAAB7FA4B4A}.Release|ARM.ActiveCfg = Release|Any CPU
+		{D1E2DFFE-43F0-4605-AD66-9FAAB7FA4B4A}.Release|ARM.Build.0 = Release|Any CPU
+		{D1E2DFFE-43F0-4605-AD66-9FAAB7FA4B4A}.Release|x64.ActiveCfg = Release|Any CPU
+		{D1E2DFFE-43F0-4605-AD66-9FAAB7FA4B4A}.Release|x64.Build.0 = Release|Any CPU
+		{D1E2DFFE-43F0-4605-AD66-9FAAB7FA4B4A}.Release|x86.ActiveCfg = Release|Any CPU
+		{D1E2DFFE-43F0-4605-AD66-9FAAB7FA4B4A}.Release|x86.Build.0 = Release|Any CPU
+		{770D2B71-5355-4010-B1B5-4AF71A3ED9EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{770D2B71-5355-4010-B1B5-4AF71A3ED9EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{770D2B71-5355-4010-B1B5-4AF71A3ED9EB}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{770D2B71-5355-4010-B1B5-4AF71A3ED9EB}.Debug|ARM.Build.0 = Debug|Any CPU
+		{770D2B71-5355-4010-B1B5-4AF71A3ED9EB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{770D2B71-5355-4010-B1B5-4AF71A3ED9EB}.Debug|x64.Build.0 = Debug|Any CPU
+		{770D2B71-5355-4010-B1B5-4AF71A3ED9EB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{770D2B71-5355-4010-B1B5-4AF71A3ED9EB}.Debug|x86.Build.0 = Debug|Any CPU
+		{770D2B71-5355-4010-B1B5-4AF71A3ED9EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{770D2B71-5355-4010-B1B5-4AF71A3ED9EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{770D2B71-5355-4010-B1B5-4AF71A3ED9EB}.Release|ARM.ActiveCfg = Release|Any CPU
+		{770D2B71-5355-4010-B1B5-4AF71A3ED9EB}.Release|ARM.Build.0 = Release|Any CPU
+		{770D2B71-5355-4010-B1B5-4AF71A3ED9EB}.Release|x64.ActiveCfg = Release|Any CPU
+		{770D2B71-5355-4010-B1B5-4AF71A3ED9EB}.Release|x64.Build.0 = Release|Any CPU
+		{770D2B71-5355-4010-B1B5-4AF71A3ED9EB}.Release|x86.ActiveCfg = Release|Any CPU
+		{770D2B71-5355-4010-B1B5-4AF71A3ED9EB}.Release|x86.Build.0 = Release|Any CPU
+		{AD0815D3-8490-4FA0-834C-F535303E0087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD0815D3-8490-4FA0-834C-F535303E0087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD0815D3-8490-4FA0-834C-F535303E0087}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{AD0815D3-8490-4FA0-834C-F535303E0087}.Debug|ARM.Build.0 = Debug|Any CPU
+		{AD0815D3-8490-4FA0-834C-F535303E0087}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AD0815D3-8490-4FA0-834C-F535303E0087}.Debug|x64.Build.0 = Debug|Any CPU
+		{AD0815D3-8490-4FA0-834C-F535303E0087}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AD0815D3-8490-4FA0-834C-F535303E0087}.Debug|x86.Build.0 = Debug|Any CPU
+		{AD0815D3-8490-4FA0-834C-F535303E0087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD0815D3-8490-4FA0-834C-F535303E0087}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD0815D3-8490-4FA0-834C-F535303E0087}.Release|ARM.ActiveCfg = Release|Any CPU
+		{AD0815D3-8490-4FA0-834C-F535303E0087}.Release|ARM.Build.0 = Release|Any CPU
+		{AD0815D3-8490-4FA0-834C-F535303E0087}.Release|x64.ActiveCfg = Release|Any CPU
+		{AD0815D3-8490-4FA0-834C-F535303E0087}.Release|x64.Build.0 = Release|Any CPU
+		{AD0815D3-8490-4FA0-834C-F535303E0087}.Release|x86.ActiveCfg = Release|Any CPU
+		{AD0815D3-8490-4FA0-834C-F535303E0087}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B180B297-B7B6-449F-9531-A4FBF0E6B9B5}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs-server:8080/tfs/webportal
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WebServiceApp\\WebServiceApp.csproj
+		SccProjectName1 = WebServiceApp
+		SccLocalPath1 = WebServiceApp
+		SccProjectUniqueName2 = CWC.AutoTests\\CWC.AutoTests.csproj
+		SccProjectName2 = CWC.AutoTests
+		SccLocalPath2 = CWC.AutoTests
+		SccProjectUniqueName3 = SpecFlow.Automation.UI\\Specflow.Automation.UI.csproj
+		SccProjectName3 = SpecFlow.Automation.UI
+		SccLocalPath3 = SpecFlow.Automation.UI
+		SccProjectUniqueName4 = SpecFlow.Automation.Backend\\Specflow.Automation.Backend.csproj
+		SccProjectName4 = SpecFlow.Automation.Backend
+		SccLocalPath4 = SpecFlow.Automation.Backend
+	EndGlobalSection
+EndGlobal

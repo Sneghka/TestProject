@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <SOProduct act="0" res="0" desc="Added successfully.">
+    <Orderline_ID>JG12092017-1</Orderline_ID>
+    <ProductCode>23</ProductCode>
+    <OrderProduct_Number>1</OrderProduct_Number>
+    <OrderProduct_Value>10000</OrderProduct_Value>
+    <Actual_Number>1</Actual_Number>
+    <Actual_Value>10000</Actual_Value>
+    <WP_count_date>2017-09-12 00:00:00</WP_count_date>
+    <WP_pack_nr>JG12092017-1</WP_pack_nr>
+    <WP_total_only>false</WP_total_only>
+    <WP_reject>false</WP_reject>
+    <WP_ref_loc_nr>JG02</WP_ref_loc_nr>
+    <WP_Picked_Qty>1</WP_Picked_Qty>
+    <WP_Picked_Value>10000</WP_Picked_Value>
+    <WP_Picked_Date>2017-09-12 00:00:00</WP_Picked_Date>
+    <CurrencyID>EUR</CurrencyID>
+  </SOProduct>
+</DocumentElement>

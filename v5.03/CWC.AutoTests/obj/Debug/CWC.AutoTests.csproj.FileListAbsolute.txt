@@ -1,0 +1,1 @@
+D:\TFS\Test_5.03\v5.03\CWC.AutoTests\obj\Debug\CWC.AutoTests.csprojFakesResolveAssemblyReference.cache

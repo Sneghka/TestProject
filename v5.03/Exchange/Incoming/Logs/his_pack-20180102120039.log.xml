@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <his_pack act="0" res="0" desc="Added successfully.">
+    <a_date>2018-01-02</a_date>
+    <a_time>084253</a_time>
+    <a_status>DEP</a_status>
+    <fr_loc_nr>1999991001</fr_loc_nr>
+    <to_loc_nr>800812</to_loc_nr>
+    <user_cd>master</user_cd>
+    <pack_val>0</pack_val>
+    <real_time>084253</real_time>
+    <dec_val>0</dec_val>
+    <bgtyp_nr>0</bgtyp_nr>
+    <pack_nr>201080908007</pack_nr>
+    <real_date>2018-01-02</real_date>
+    <stat_desc>Delivered at depot</stat_desc>
+    <fr_loc_cd>1999991001</fr_loc_cd>
+    <to_loc_cd>800812</to_loc_cd>
+    <branch_cd>LOS</branch_cd>
+    <IsRecollected>TRUE</IsRecollected>
+    <new_delivery_date>2018-01-02</new_delivery_date>
+    <CitIdentifier>test</CitIdentifier>
+  </his_pack>
+</DocumentElement>

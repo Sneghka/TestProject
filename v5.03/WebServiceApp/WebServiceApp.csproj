@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD0815D3-8490-4FA0-834C-F535303E0087}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebServiceApp</RootNamespace>
+    <AssemblyName>WebServiceApp</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cwc.Archiving, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Archiving.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.BaseData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.BaseData.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.CallManagement">
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.CallManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.CashCenter">
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.CashCenter.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.CashPoint">
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.CashPoint.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Coin">
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Coin.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Constants, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Constants.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Feedings, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Feedings.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Jobs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Jobs.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Localization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.OrderFeedings, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.OrderFeedings.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.OrderImport">
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.OrderImport.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Ordering, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Ordering.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Replication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Replication.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Sync, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.Sync.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.Transport">
+      <HintPath>\\portal\v5.03_HQ\Site\Bin\Cwc.Transport.dll</HintPath>
+    </Reference>
+    <Reference Include="Cwc.VersionInfo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22a5017f9422befd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\PORTAL\v5.03_HQ\Site\Bin\Cwc.VersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebServiceFeedings.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\WebServiceFeedings.cs">
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>32364</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:32364/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ProdComposition" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ProdComposition">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProdCodeWhole" type="xs:string" minOccurs="0" />
+              <xs:element name="ProdCodePart" type="xs:string" minOccurs="0" />
+              <xs:element name="numItems" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+            <xs:attribute name="act" type="xs:int" />
+          </xs:complexType>
+        </xs:element>
+		  <xs:element name="ProdComposition_Key">
+			  <xs:complexType>
+				  <xs:sequence>
+					  <xs:element name="ProdCodePart" type="xs:string" minOccurs="0" />
+					  <xs:element name="ProdCodeWhole" type="xs:string" minOccurs="0" />
+				  </xs:sequence>
+			  </xs:complexType>
+		  </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

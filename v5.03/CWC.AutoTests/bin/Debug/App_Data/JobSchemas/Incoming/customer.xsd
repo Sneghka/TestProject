@@ -1,0 +1,46 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="customer" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="customer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="abbrev" type="xs:string" minOccurs="0" />
+              <xs:element name="csgrp_cd" type="xs:string" minOccurs="0" />
+              <xs:element name="cus_nr" type="xs:decimal" minOccurs="0" />
+              <xs:element name="fax" type="xs:string" minOccurs="0" />
+              <xs:element name="name" type="xs:string" minOccurs="0" />
+              <xs:element name="pcode_pb" type="xs:string" minOccurs="0" />
+              <xs:element name="pcode_st" type="xs:string" minOccurs="0" />
+              <xs:element name="phone" type="xs:string" minOccurs="0" />
+              <xs:element name="pobox" type="xs:string" minOccurs="0" />
+              <xs:element name="street" type="xs:string" minOccurs="0" />
+              <xs:element name="town_pb" type="xs:string" minOccurs="0" />
+              <xs:element name="town_st" type="xs:string" minOccurs="0" />
+              <xs:element name="e_mail" type="xs:string" minOccurs="0" />
+              <xs:element name="repr" type="xs:string" minOccurs="0" />
+              <xs:element name="acc_man" type="xs:string" minOccurs="0" />
+              <xs:element name="national" type="xs:boolean" minOccurs="0" />
+              <xs:element name="area_pc" type="xs:string" minOccurs="0" />
+              <xs:element name="det_pc" type="xs:string" minOccurs="0" />
+              <xs:element name="street_det" type="xs:string" minOccurs="0" />
+              <xs:element name="county" type="xs:string" minOccurs="0" />
+              <xs:element name="cus_cd" type="xs:string" minOccurs="0" />
+              <xs:element name="inactive" type="xs:boolean" minOccurs="0" />
+              <xs:element name="enabled" type="xs:string" msprop:OptionalValues="true" msprop:DefaultValue="1" minOccurs="0" />
+              <xs:element name="WP_RecordType" type="xs:string" minOccurs="0" />
+              <xs:element name="ReferenceNumber" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+            <xs:attribute name="act" type="xs:int" />
+            <xs:attribute name="sender" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//customer" />
+        <xs:field xpath="cus_nr" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

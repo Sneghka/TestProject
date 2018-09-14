@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <branch act="1">
+    <branch_nr>9901</branch_nr>
+    <descript>Test branch 01</descript>
+    <branch_cd>TST</branch_cd>
+    <loc_nr>1999990001</loc_nr>
+    <ref_loc_nr>1999990001</ref_loc_nr>
+  </branch>
+</DocumentElement>

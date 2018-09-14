@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ServiceOrder" msdata:UseCurrentLocale="false">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ServiceOrder">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Order_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="Cus_nr" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Service_Date" type="xs:string" msprop:Type="DateTime" minOccurs="0" />
+              <xs:element name="Order_Type" type="xs:int" minOccurs="0" />
+              <xs:element name="Order_Level" type="xs:int" minOccurs="0" />
+              <xs:element name="Cancel_Reason" type="xs:string" minOccurs="0" msprop:OptionalValues="true" />
+              <xs:element name="Reference_ID" type="xs:string" minOccurs="0" msprop:OptionalValues="true" />
+              <xs:element name="WP_ServiceType_Code" type="xs:string" minOccurs="0" msprop:OptionalValues="true" />
+              <xs:element name="WP_OrderedValue" type="xs:decimal" minOccurs="0" msprop:OptionalValues="true" />
+              <xs:element name="WP_OrderedWeight" type="xs:decimal" minOccurs="0" msprop:OptionalValues="true" />
+              <xs:element name="WP_PreannouncedValue" type="xs:decimal" minOccurs="0" msprop:OptionalValues="true" />
+              <xs:element name="WP_SpecialCoinsValue" type="xs:decimal" minOccurs="0" msprop:OptionalValues="true" />
+              <xs:element name="WP_loc_nr" type="xs:decimal" minOccurs="0" msprop:OptionalValues="true" />
+              <xs:element name="WP_ref_loc_nr" type="xs:string" minOccurs="0" msprop:OptionalValues="true" />
+              <xs:element name="mast_cd" type="xs:string" minOccurs="0" msprop:OptionalValues="true" />
+              <xs:element name="WP_branch_cd" type="xs:string" minOccurs="0" msprop:OptionalValues="true" />
+              <xs:element name="WP_CurrencyCode" type="xs:string" minOccurs="0" msprop:OptionalValues="true" />
+              <xs:element name="WP_Comments" type="xs:string" minOccurs="0" msprop:OptionalValues="true" />
+              <xs:element name="WP_DateCreated" type="xs:string" msprop:Type="DateTime" minOccurs="0" />
+              <xs:element name="WP_DateUpdated" type="xs:string" msprop:Type="DateTime" minOccurs="0" />
+              <xs:element name="WP_Email" type="xs:string" minOccurs="0" msprop:OptionalValues="true" />
+              <xs:element name="WP_PickUp_ref_loc_nr" type="xs:string" minOccurs="0" msprop:OptionalValues="true" />
+              <!--<xs:element name="Old_Order_ID" type="xs:string" minOccurs="0" msprop:OptionalValues="true"/>-->
+            </xs:sequence>
+            <xs:attribute name="act" type="xs:int" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+	  <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+		  <xs:selector xpath=".//ServiceOrder" />
+		  <xs:field xpath="Order_ID" />
+	  </xs:unique>
+  </xs:element>
+</xs:schema>

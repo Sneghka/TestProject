@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <daily act="0">
+    <branch_cd>LOS</branch_cd>
+    <compl_lg>true</compl_lg>
+    <conf_lg>true</conf_lg>
+    <dai_date>2017-11-07</dai_date>
+    <day_nr>5</day_nr>
+    <mast_nr>1</mast_nr>
+    <on_rt_lg>true</on_rt_lg>
+    <truck_nr>100</truck_nr>
+    <s_km>900</s_km>
+    <e_km>950</e_km>
+    <t_km>50</t_km>
+    <p_km>0</p_km>
+    <a_s_date>2017-11-07</a_s_date>
+    <a_s_time>093833</a_s_time>
+    <tib_date>2017-11-07</tib_date>
+    <tib_time>093831</tib_time>
+    <a_e_date>2017-11-07</a_e_date>
+    <a_e_time>094020</a_e_time>
+    <a_d_time>0002</a_d_time>
+    <p_e_date>2017-11-07</p_e_date>
+    <p_d_time>1505</p_d_time>
+    <p_e_time>2305</p_e_time>
+    <p_s_date>2017-11-07</p_s_date>
+    <p_s_time>0800</p_s_time>
+    <upld_date>2017-11-07</upld_date>
+    <upld_time>093644</upld_time>
+    <dwnl_date>2017-11-07</dwnl_date>
+    <dwnl_time>094130</dwnl_time>
+    <gen_date>2017-11-07</gen_date>
+    <gen_time>093510</gen_time>
+    <mast_cd>LOS1001</mast_cd>
+    <fixed>false</fixed>
+    <citcode>ttt</citcode>
+  </daily>
+</DocumentElement>

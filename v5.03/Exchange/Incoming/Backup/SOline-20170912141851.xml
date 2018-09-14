@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <SOline act="0">
+    <OrderLine_ID>JG12092017-1</OrderLine_ID>
+    <Order_ID>JG12092017</Order_ID>
+    <Orderline_status>REGISTERED</Orderline_status>
+    <Loc_nr>3000000026</Loc_nr>
+    <mast_cd>JHB04</mast_cd>
+    <Day_nr>1</Day_nr>
+    <Dai_date>2017-09-12 00:00:00</Dai_date>
+    <a_time>1111</a_time>
+    <Visit_Sequence>1</Visit_Sequence>
+    <branch_nr>20</branch_nr>
+    <branch_cd>JG</branch_cd>
+    <Serv_type>Collect</Serv_type>
+    <Revenue>30</Revenue>
+    <Orderline_value>10000</Orderline_value>
+  </SOline>
+</DocumentElement>

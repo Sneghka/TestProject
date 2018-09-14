@@ -1,0 +1,110 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="location" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="location">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="abbrev" type="xs:string" minOccurs="0" />
+              <xs:element name="cus_nr" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Level" type="xs:string" minOccurs="0" />
+              <xs:element name="VisitAddress" type="xs:string" minOccurs="0" />
+              <xs:element name="fax" type="xs:string" minOccurs="0" />
+              <xs:element name="lctyp_cd" type="xs:string" minOccurs="0" />
+              <xs:element name="loc_nr" type="xs:decimal" minOccurs="0" />
+              <xs:element name="name" type="xs:string" minOccurs="0" />
+              <xs:element name="pcode_pb" type="xs:string" minOccurs="0" />
+              <xs:element name="pcode_st" type="xs:string" minOccurs="0" />
+              <xs:element name="phone" type="xs:string" minOccurs="0" />
+              <xs:element name="street" type="xs:string" minOccurs="0" />
+              <xs:element name="town_pb" type="xs:string" minOccurs="0" />
+              <xs:element name="town_st" type="xs:string" minOccurs="0" />
+              <xs:element name="otime_s1" type="xs:string" minOccurs="0" />
+              <xs:element name="otime_c1" type="xs:string" minOccurs="0" />
+              <xs:element name="s_time_1" type="xs:string" minOccurs="0" />
+              <xs:element name="otime_c2" type="xs:string" minOccurs="0" />
+              <xs:element name="otime_s2" type="xs:string" minOccurs="0" />
+              <xs:element name="s_time_2" type="xs:string" minOccurs="0" />
+              <xs:element name="otime_c3" type="xs:string" minOccurs="0" />
+              <xs:element name="otime_s3" type="xs:string" minOccurs="0" />
+              <xs:element name="s_time_3" type="xs:string" minOccurs="0" />
+              <xs:element name="pobox" type="xs:string" minOccurs="0" />
+              <xs:element name="branch_nr" type="xs:int" minOccurs="0" />
+              <xs:element name="remark-1" type="xs:string" minOccurs="0" />
+              <xs:element name="remark-2" type="xs:string" minOccurs="0" />
+              <xs:element name="remark-3" type="xs:string" minOccurs="0" />
+              <xs:element name="max_val_loc" type="xs:decimal" minOccurs="0" />
+              <xs:element name="remark-4" type="xs:string" minOccurs="0" />
+              <xs:element name="sub_loc_typ" type="xs:string" minOccurs="0" />
+              <xs:element name="always_on_rt" type="xs:boolean" minOccurs="0" />
+              <xs:element name="prt_manif" type="xs:boolean" minOccurs="0" />
+              <xs:element name="fob_nr" type="xs:string" minOccurs="0" />
+              <xs:element name="safe_key" type="xs:int" minOccurs="0" />
+              <xs:element name="atm_type_nr" type="xs:string" minOccurs="0" />
+              <xs:element name="repack_allowed" type="xs:boolean" minOccurs="0" />
+              <xs:element name="sel_onw_first" type="xs:boolean" minOccurs="0" />
+              <xs:element name="flag_fields" type="xs:string" minOccurs="0" />
+              <xs:element name="area_pc" type="xs:string" minOccurs="0" />
+              <xs:element name="det_pc" type="xs:string" minOccurs="0" />
+              <xs:element name="street_det" type="xs:string" minOccurs="0" />
+              <xs:element name="county" type="xs:string" minOccurs="0" />
+              <xs:element name="repr" type="xs:string" minOccurs="0" />
+              <xs:element name="atm_id" type="xs:string" minOccurs="0" />
+              <xs:element name="e_mail" type="xs:string" minOccurs="0" />
+              <xs:element name="state" type="xs:string" minOccurs="0" />
+              <xs:element name="day_rev1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="day_rev2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="day_rev3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="day_rev4" type="xs:decimal" minOccurs="0" />
+              <xs:element name="day_rev5" type="xs:decimal" minOccurs="0" />
+              <xs:element name="day_rev6" type="xs:decimal" minOccurs="0" />
+              <xs:element name="day_rev7" type="xs:decimal" minOccurs="0" />
+              <xs:element name="max_weight" type="xs:decimal" minOccurs="0" />
+              <xs:element name="prt_tot_val_item" type="xs:boolean" minOccurs="0" />
+              <xs:element name="scan_col" type="xs:boolean" minOccurs="0" />
+              <xs:element name="scan_del" type="xs:boolean" minOccurs="0" />
+              <xs:element name="one_mv" type="xs:int" minOccurs="0" />
+              <xs:element name="name_s" type="xs:string" minOccurs="0" />
+              <xs:element name="street_s" type="xs:string" minOccurs="0" />
+              <xs:element name="town_st_s" type="xs:string" minOccurs="0" />
+              <xs:element name="ref_loc_nr" type="xs:string" minOccurs="0" />
+              <xs:element name="loc_nr_main" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ltCode" type="xs:string" minOccurs="0"/>
+              <xs:element name="customerDimension" type="xs:string" minOccurs="0" />
+              <xs:element name="enabled" type="xs:boolean" msprop:OptionalValues="true" msprop:DefaultValue="true" minOccurs="0" />
+              <xs:element name="ElectronicSignature" type="xs:boolean" minOccurs="0" />
+              <xs:element name="TypedLocationIDAllowed" type="xs:boolean" minOccurs="0" />
+              <xs:element name="PrintVisitReceipt" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CancelVisitAllowed" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CallLocation" type="xs:boolean" minOccurs="0" />
+              <xs:element name="WP_DateCreated" msprop:Type="DateTime" type="xs:string" minOccurs="0" />
+              <xs:element name="PreferredLanguage" type="xs:int" minOccurs="0" msprop:OptionalValues="true" msprop:DefaultValue="1"/>
+              <xs:element name="OnwardLocation">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Location" type="xs:decimal" minOccurs="0" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="AlarmCode">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Code" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ClientType" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+            <xs:attribute name="act" type="xs:int" />
+            <xs:attribute name="sender" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//location" />
+      <xs:field xpath="loc_nr" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

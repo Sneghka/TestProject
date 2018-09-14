@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <location act="1" res="0" desc="Updated successfully.">
+    <abbrev>11016405</abbrev>
+    <cus_nr>3000005788</cus_nr>
+    <Level>1</Level>
+    <lctyp_cd>NOR</lctyp_cd>
+    <loc_nr>9900000025</loc_nr>
+    <name>Auto Test Location Edited</name>
+    <branch_nr>1</branch_nr>
+    <ref_loc_nr>11016405</ref_loc_nr>
+    <enabled>false</enabled>
+    <ElectronicSignature>false</ElectronicSignature>
+    <TypedLocationIDAllowed>false</TypedLocationIDAllowed>
+    <PrintVisitReceipt>false</PrintVisitReceipt>
+    <CancelVisitAllowed>false</CancelVisitAllowed>
+    <CallLocation>false</CallLocation>
+    <DateCreated>2018-01-02 12:00:33</DateCreated>
+    <PreferredLanguage>1</PreferredLanguage>
+    <SharedSubLocation>false</SharedSubLocation>
+  </location>
+</DocumentElement>

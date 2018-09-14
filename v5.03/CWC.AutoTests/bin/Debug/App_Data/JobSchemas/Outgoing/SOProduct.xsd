@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="SOProduct" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SOProduct">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Orderline_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductCode" type="xs:string" minOccurs="0" />
+              <xs:element name="OrderProduct_Number" type="xs:int" minOccurs="0" />
+              <xs:element name="OrderProduct_Value" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Actual_Number" type="xs:int" minOccurs="0" />
+              <xs:element name="Actual_Value" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WP_prean_qty" type="xs:int" minOccurs="0" />
+              <xs:element name="WP_prean_value" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WP_count_date" type="xs:string" msprop:Type="DateTime" minOccurs="0" />
+              <xs:element name="WP_pack_nr" type="xs:string" minOccurs="0" />
+              <xs:element name="WP_material_id" type="xs:string" minOccurs="0" />
+              <xs:element name="WP_booking_date" type="xs:string" msprop:Type="DateTime" minOccurs="0" />
+		      <xs:element name="WP_total_only" type="xs:boolean" minOccurs="0" />
+		      <xs:element name="WP_reject" type="xs:boolean" minOccurs="0" msprop:OptionalValues="true" msprop:DefaultValue="false"/>
+              <xs:element name="WP_ref_loc_nr" type="xs:string" minOccurs="0" />
+              <xs:element name="WP_Submit_date" type="xs:string" msprop:Type="DateTime" minOccurs="0" />
+              <xs:element name="WP_Picked_Qty" type="xs:int" minOccurs="0" />
+              <xs:element name="WP_Picked_Value" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WP_Picked_Date" type="xs:string" msprop:Type="DateTime" minOccurs="0" />
+              <xs:element name="CurrencyID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+            <xs:attribute name="act" type="xs:int" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+	  <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+		  <xs:selector xpath=".//SOProduct" />
+		  <xs:field xpath="Orderline_ID" />
+		  <xs:field xpath="ProductCode" />
+		  <xs:field xpath="WP_material_id" />
+		  <xs:field xpath="WP_pack_nr" />
+		  <xs:field xpath="WP_ref_loc_nr" />
+		  <xs:field xpath="WP_Submit_date" />
+		  <xs:field xpath="WP_count_date" />
+		  <xs:field xpath="WP_Picked_Date" />
+	  </xs:unique>
+  </xs:element>
+</xs:schema>

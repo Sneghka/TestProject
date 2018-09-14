@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <configSections>
+    <section name="BillingRuleWorkers" type="System.Configuration.NameValueSectionHandler" />
+  </configSections>
+  <BillingRuleWorkers>
+    <BillingRuleWorker name="Cwc.Ordering.Classes.BillingRuleWorkers.PricePerServiceOrderPackingStartWorker, Cwc.Ordering"></BillingRuleWorker>
+    <BillingRuleWorker name="Cwc.Ordering.Classes.BillingRuleWorkers.PricePerServiceOrderWorker, Cwc.Ordering"></BillingRuleWorker>
+    <BillingRuleWorker name="Cwc.Ordering.Classes.BillingRuleWorkers.BillingPerPeriodWorker, Cwc.Ordering"></BillingRuleWorker>
+
+    <BillingRuleWorker name="Cwc.Ordering.Classes.BillingRuleWorkers.BillingDataByPricePerCancelledServiceOrder, Cwc.Ordering"></BillingRuleWorker>
+    <BillingRuleWorker name="Cwc.Ordering.Classes.BillingRuleWorkers.BillingDataByPricePerOrderedProduct, Cwc.Ordering"></BillingRuleWorker>
+
+    <BillingRuleWorker name="Cwc.CashCenter.Classes.BillingRuleWorkers.PricePerCashCenterCountingAnomalyCodeWorker, Cwc.CashCenter"></BillingRuleWorker>
+    <BillingRuleWorker name="Cwc.CashCenter.Classes.BillingRuleWorkers.PricePerCashCenterCountingContainerWorker, Cwc.CashCenter"></BillingRuleWorker>
+    <BillingRuleWorker name="Cwc.CashCenter.Classes.BillingRuleWorkers.PricePerCashCenterCountingMaterialWorker, Cwc.CashCenter"></BillingRuleWorker>
+    <BillingRuleWorker name="Cwc.CashCenter.Classes.BillingRuleWorkers.PricePerCashCenterCountingOrderWorker, Cwc.CashCenter"></BillingRuleWorker>
+    <BillingRuleWorker name="Cwc.CashCenter.Classes.BillingRuleWorkers.PricePerCashCenterCustomerSpecificationWorker, Cwc.CashCenter"></BillingRuleWorker>
+    <BillingRuleWorker name="Cwc.CashCenter.Classes.BillingRuleWorkers.PricePerCashCenterPackingContainerWorker, Cwc.CashCenter"></BillingRuleWorker>
+    <BillingRuleWorker name="Cwc.CashCenter.Classes.BillingRuleWorkers.PricePerCashCenterPackingOrderWorker, Cwc.CashCenter"></BillingRuleWorker>
+    <BillingRuleWorker name="Cwc.CashCenter.Classes.BillingRuleWorkers.PricePerCashCenterPackingProductWorker, Cwc.CashCenter"></BillingRuleWorker>
+
+    <BillingRuleWorker name="Cwc.Transport.Classes.BillingRuleWorkers.ContainerTypeAtVisitAddressWorker, Cwc.Transport"></BillingRuleWorker>
+    <BillingRuleWorker name="Cwc.Transport.Classes.BillingRuleWorkers.ContainerTypeAtLocationWorker, Cwc.Transport"></BillingRuleWorker>
+    <BillingRuleWorker name="Cwc.Transport.Classes.BillingRuleWorkers.ServicingJobAtLocationWorker, Cwc.Transport"></BillingRuleWorker>
+    <BillingRuleWorker name="Cwc.Transport.Classes.BillingRuleWorkers.PricePerDeliveredItemLocationWorker, Cwc.Transport"></BillingRuleWorker>
+    <BillingRuleWorker name="Cwc.Transport.Classes.BillingRuleWorkers.BillingDataByPricePerDeliveredItemVisitAddressWorker, Cwc.Transport"></BillingRuleWorker>
+    <BillingRuleWorker name="Cwc.Transport.Classes.BillingRuleWorkers.BillingDataByVisitAtLocationWorker, Cwc.Transport"></BillingRuleWorker>
+    <BillingRuleWorker name="Cwc.Transport.Classes.BillingRuleWorkers.BillingDataByVisitAtVisitAddressWorker, Cwc.Transport"></BillingRuleWorker>
+    <BillingRuleWorker name="Cwc.Transport.Classes.BillingRuleWorkers.VisitsPerDayPerCustomerWorker, Cwc.Transport"></BillingRuleWorker>
+    <BillingRuleWorker name="Cwc.Transport.Classes.BillingRuleWorkers.BillingDataByOrderAndServiceTypeAtLocationWorker, Cwc.Transport"></BillingRuleWorker>
+    <BillingRuleWorker name="Cwc.Transport.Classes.BillingRuleWorkers.BillingDataByOrderAndServiceTypeAtVisitAddressWorker, Cwc.Transport"></BillingRuleWorker>
+
+    <BillingRuleWorker name="Cwc.CallManagement.Classes.BillingRuleWorkers.TransportIncidentWorker, Cwc.CallManagement"></BillingRuleWorker>
+  </BillingRuleWorkers>
+</configuration>

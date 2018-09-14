@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <dai_serv act="0">
+    <contr_nr>61193</contr_nr>
+    <loc_nr>2852381</loc_nr>
+    <day_nr>2</day_nr>
+    <bgtyp_nr>1</bgtyp_nr>
+    <serv_type>Collect</serv_type>
+    <to_loc_nr>420</to_loc_nr>
+    <a_time>0915</a_time>
+    <revenue>0</revenue>
+    <planned>1</planned>
+    <executed>0</executed>
+    <dai_date>2018-01-02 12:00:50</dai_date>
+    <dai_date_a>2018-01-02 12:00:50</dai_date_a>
+    <amt_packs_del>0</amt_packs_del>
+    <total_value_del>0</total_value_del>
+    <amt_packs_col>2</amt_packs_col>
+    <total_value_col>0</total_value_col>
+    <msg_nr>0</msg_nr>
+    <dai_timew1>0900-1700</dai_timew1>
+    <dai_timew2>
+    </dai_timew2>
+    <max_val>0</max_val>
+    <s_time>
+    </s_time>
+    <serv_nr>24383</serv_nr>
+    <initiator>1</initiator>
+    <amt>0</amt>
+    <Orderline_id>
+    </Orderline_id>
+    <branch_cd>ST</branch_cd>
+    <mast_cd>ST2T03</mast_cd>
+    <ref_loc_nr>
+    </ref_loc_nr>
+    <to_loc_cd>
+    </to_loc_cd>
+    <citcode>ttt</citcode>
+  </dai_serv>
+</DocumentElement>

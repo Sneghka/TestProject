@@ -1,0 +1,95 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="C:\Projects\Test\v5.03\CWC.AutoTests\bin\Debug\Cwc.Integration.OrderImportFormatB.dll" #>
+<#@ assembly name="C:\Projects\Test\v5.03\CWC.AutoTests\bin\Debug\Cwc.Common.dll" #>
+<#@ assembly name="C:\Projects\Test\v5.03\CWC.AutoTests\bin\Debug\Cwc.CashCenter.dll" #>
+<#@ assembly name="C:\Projects\Test\v5.03\CWC.AutoTests\bin\Debug\Cwc.Localization.dll" #>
+<#@ assembly name="System.ComponentModel.DataAnnotations" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="Cwc.CashCenter" #>
+<#@ import namespace="Cwc.Common" #>
+<#@ import namespace="Cwc.Localization" #>
+<#@ import namespace="System.Reflection" #>
+<#@ import namespace="System.ComponentModel.DataAnnotations.Schema" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension="EntityBuilderClassName.cs" #>
+<#var Entity = typeof(StockPosition); #>
+<#var EntityBuilderClassName = Entity.Name+"Builder"; #>
+<#var EntityName = Entity.Name; #>
+using System;
+using System.Linq;
+using Cwc.BaseData;
+using Cwc.Common;
+using Cwc.BaseData.Model;
+using Cwc.Localization;
+using System.Linq.Expressions;
+using Cwc.Transport;
+using Cwc.Transport.Model;
+
+namespace CWC.AutoTests.ObjectBuilder
+{
+	public class <#=EntityBuilderClassName#>
+	{
+		ModelContext _context;
+		DataBaseParams _dbParams;
+		<#=EntityName#> entity;
+
+		public <#=EntityBuilderClassName#>()
+		{
+			 _dbParams = new DataBaseParams();
+			 _context = new ModelContext();
+		}
+
+	<# foreach(var item in Entity.GetProperties().Where(p=>Attribute.IsDefined(p, typeof(PropertyDescriptionAttribute)) && !Attribute.IsDefined(p, typeof(DatabaseGeneratedAttribute)))) { #>
+	public <#=EntityBuilderClassName#> With_<#=item.Name#>(<#=item.PropertyType.Name.Contains("Nullable") ? item.PropertyType.GetGenericArguments()[0].Name+"?" : item.PropertyType.Name#> value)
+		{
+			if (entity != null) 
+			{
+				entity.<#=item.Name#> = value;
+				return this;
+			}					
+			throw new InvalidOperationException("Make sure that New() or Take() methods are invoked first");
+		}
+
+	<# } #>
+
+		public <#=EntityBuilderClassName#> New()
+		{
+		<# if(Entity.GetConstructor(Type.EmptyTypes) != null) {#>
+	entity = new <#=EntityName#>();
+		<# } #>
+		<# if(Entity.GetConstructor(Type.EmptyTypes) == null) {#>
+			throw new NotImplementedException("There is no default constructor for {0}. Entity instantiation should be provided manually", EntityName);
+		<# } #>		
+			return this;
+		}
+
+		public static implicit operator <#=EntityName#>(<#=EntityBuilderClassName#> ins)
+		{
+			return ins.Build();
+		}
+
+		public <#=EntityName#> Build()
+		{
+			return entity;
+		}
+
+		public <#=EntityBuilderClassName#> SaveToDb()
+		{
+			throw new NotImplementedException("SaveToDb method should implemented manually");
+			return this;
+		}
+
+		public <#=EntityBuilderClassName#> Take(Expression<Func<<#=EntityName#>, bool>> expression)
+		{
+			throw new NotImplementedException("Take method should implemented manually");
+			return this;
+		}
+
+		public void Dispose()
+		{
+			_context.Dispose();
+		}
+	}
+}

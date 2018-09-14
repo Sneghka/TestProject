@@ -1,0 +1,21 @@
+﻿2017-12-29T13:22:33.8573889+02:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2017-12-29T13:22:34.1264091+02:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2017-12-29T13:22:34.1274089+02:00;VSTestExecutionThread;Info;SpecRun: running tests in E:\TFS\Test_5.03\v5.03\SpecFlow.Automation.Backend\bin\Debug\Specflow.Automation.Backend.dll
+2017-12-29T13:22:34.1284095+02:00;VSTestExecutionThread;Info;Profile: Default
+2017-12-29T13:22:39.6761527+02:00;Thread#12;Info;Discovering target: Default
+Test Suite Dump
+#0: CWC.AutoTests/Default - 
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 0
+Succeeded: 0
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 0

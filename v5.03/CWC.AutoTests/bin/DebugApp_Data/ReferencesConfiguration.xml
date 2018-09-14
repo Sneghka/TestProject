@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <configSections>
+    <section name="References" type="System.Configuration.NameValueSectionHandler" />
+  </configSections>
+  <References>
+    <Reference referenceKey="Cwc.Billing.Model.BilledCase.ServiceOrder, Cwc.Billing" referenceType="Cwc.Ordering.Order, Cwc.Ordering"></Reference>
+    <Reference referenceKey="Cwc.Billing.Model.BilledCase.StockContainer, Cwc.Billing" referenceType="Cwc.CashCenter.StockContainer, Cwc.CashCenter"></Reference>
+    <Reference referenceKey="Cwc.Billing.Model.BilledCase.StockOrder, Cwc.Billing" referenceType="Cwc.CashCenter.StockOrder, Cwc.CashCenter"></Reference>
+    <Reference referenceKey="Cwc.Billing.Model.BilledCase.DailyStop, Cwc.Billing" referenceType="Cwc.Transport.Model.DailyStop, Cwc.Transport"></Reference>
+    <Reference referenceKey="Cwc.Billing.Model.BilledCase.DailyStopJob, Cwc.Billing" referenceType="Cwc.Transport.Model.DailyStopJob, Cwc.Transport"></Reference>
+  </References>
+</configuration>

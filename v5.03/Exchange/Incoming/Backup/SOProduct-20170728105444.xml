@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <SOProduct act="0">
+    <Orderline_ID>JG28072017-1</Orderline_ID>
+    <Actual_Number>1</Actual_Number>
+    <Actual_Value>10000</Actual_Value>
+    <WP_prean_qty>1</WP_prean_qty>
+    <WP_prean_value>10000</WP_prean_value>
+    <WP_material_id>310</WP_material_id>
+    <WP_count_date>2017-07-28 00:00:00</WP_count_date>
+    <WP_booking_date>2017-07-28 00:00:00</WP_booking_date>
+    <WP_pack_nr>JG28072017-1</WP_pack_nr>
+    <WP_total_only>0</WP_total_only>
+    <WP_reject>0</WP_reject>
+    <WP_ref_loc_nr>JG02</WP_ref_loc_nr>
+    <Currency>EUR</Currency>
+  </SOProduct>
+</DocumentElement>

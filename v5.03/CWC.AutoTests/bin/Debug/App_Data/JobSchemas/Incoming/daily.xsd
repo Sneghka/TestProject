@@ -1,0 +1,58 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="daily" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="daily">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="compl_lg" type="xs:boolean" minOccurs="0" />
+              <xs:element name="conf_lg" type="xs:boolean" minOccurs="0" />
+              <xs:element name="dai_date" msprop:Type="DateTime" type="xs:string" minOccurs="0" />
+			  <xs:element name="day_nr" type="xs:int" minOccurs="0" />
+			  <xs:element name="on_rt_lg" type="xs:boolean" minOccurs="0" />
+			  <xs:element name="truck_nr" type="xs:decimal" minOccurs="0" />
+			  <xs:element name="s_km" type="xs:decimal" minOccurs="0" />
+			  <xs:element name="e_km" type="xs:decimal" minOccurs="0" />
+			  <xs:element name="t_km" type="xs:decimal" minOccurs="0" />
+			  <xs:element name="p_km" type="xs:decimal" minOccurs="0" />
+			  <xs:element name="a_s_date" msprop:Type="DateTime" type="xs:string" minOccurs="0" />
+              <xs:element name="a_s_time" type="xs:string" minOccurs="0" />
+              <xs:element name="tib_date" msprop:Type="DateTime" type="xs:string" minOccurs="0" />
+			  <xs:element name="tib_time" type="xs:string" minOccurs="0" />
+			  <xs:element name="logon_date" msprop:Type="DateTime" type="xs:string" minOccurs="0" />
+              <xs:element name="logon_time" type="xs:string" minOccurs="0" />
+              <xs:element name="a_e_date" msprop:Type="DateTime" type="xs:string" minOccurs="0" />
+			  <xs:element name="a_e_time" type="xs:string" minOccurs="0" />
+			  <xs:element name="a_d_time" type="xs:string" minOccurs="0" />
+			  <xs:element name="p_e_date" msprop:Type="DateTime" type="xs:string" minOccurs="0" />
+              <xs:element name="p_d_time" type="xs:string" minOccurs="0" />
+              <xs:element name="p_e_time" type="xs:string" minOccurs="0" />
+              <xs:element name="p_s_date" msprop:Type="DateTime" type="xs:string" minOccurs="0" />
+			  <xs:element name="p_s_time" type="xs:string" minOccurs="0" />
+			  <xs:element name="upld_date" msprop:Type="DateTime" type="xs:string" minOccurs="0" />
+              <xs:element name="upld_time" type="xs:string" minOccurs="0" />
+              <xs:element name="dwnl_date" msprop:Type="DateTime" type="xs:string" minOccurs="0" />
+			  <xs:element name="dwnl_time" type="xs:string" minOccurs="0" />
+			  <xs:element name="gen_date" msprop:Type="DateTime" type="xs:string" minOccurs="0" />
+              <xs:element name="gen_time" type="xs:string" minOccurs="0" />
+              <xs:element name="vcard_nr" type="xs:string" minOccurs="0" />
+              <xs:element name="dai_rt_txt" type="xs:string" minOccurs="0" />
+              <xs:element name="mast_cd" type="xs:string" minOccurs="0" />
+              <xs:element name="orgdepot_nr" type="xs:int" minOccurs="0" />
+              <xs:element name="subdepot_nr" type="xs:int" minOccurs="0" />
+              <xs:element name="branch_cd" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+			  <xs:attribute name="act" type="xs:int" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+	  <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+		  <xs:selector xpath=".//daily" />
+		  <xs:field xpath="dai_date" />
+		  <xs:field xpath="day_nr" />
+		  <xs:field xpath="mast_cd" />
+	  </xs:unique>
+  </xs:element>
+</xs:schema>

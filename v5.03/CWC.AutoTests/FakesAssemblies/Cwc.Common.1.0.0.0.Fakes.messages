@@ -1,0 +1,377 @@
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for <>f__AnonymousType0`2: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for <>f__AnonymousType1`3: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for <>f__AnonymousType2: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for <>f__AnonymousType3`2: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for <>f__AnonymousType4`2: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for <>f__AnonymousType5`2: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for <>f__AnonymousType6`2: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.ResultExtensions: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.ReferencesHelper: type has no family visible contructors.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.ActionsHelper: type has no family visible contructors.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.CommonFacade: type has no family visible contructors.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.CommonService: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.EntityServiceConstants: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.BaseEntity`1: type Cwc.Common.BaseEntity`1 unstubbable: unsupported constraint type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.JointType: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.EnvironmentHelper: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Weekday: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.DeadlockPriority: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.DataBaseParams: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.SqlUtil: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.EnumUtility: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.LogEventType: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.QueryHint: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.TableHint: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.DateTimeHelper: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.FormatSettingsProvider: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.SimpleMaskHelper: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.LockResult: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.MathHelper: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.QueryBuilderExtension2: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.LinkThroughAttribute: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.QueryBuilderExtension: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.AggregationType: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.AggregationExtendedType: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.ArchivingAggregationType: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.NullableValue`1: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.LocksService: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.ConfigurationClient: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.ConfigurationService: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.AttributeConfigurationService: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.LogService: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.ViewSettingFacade: type has no family visible contructors.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.ViewSettingService: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.ComparisonAttributesByNumber: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.AttributeInitializationType: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.UserSettingsHelper: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.DataBaseHelper: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.EMailHelper: type has no family visible contructors.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.AggregationFunction: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.ValidationHelper: type has no family visible contructors.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.TypeAttribute: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.AttributeSortOrder: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.XmlStructureReader: type has no family visible contructors.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Localization.LocalizationFacadeProvider: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Validation.DateTimePropertyValidator: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Validation.IntegralNumericPropertyValidator: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Validation.NonintegralNumericPropertyValidator: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Validation.PropertyValidator`1: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Validation.StringPropertyValidator: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Upgrade.SQLUpgradeAction: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Upgrade.UpgradeHelper: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Sync.SyncAction: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Service.ClassDescriptionService.ClassDescriptionRepository: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Recordable.MemoryTransaction: type has no family visible contructors.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.QueryBuilder.AliasInfo: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.QueryBuilder.GenericHelper: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.QueryBuilder.InvokeGeneric: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.QueryBuilder.LinkInfo: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.QueryBuilder.MessageAttribute: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.QueryBuilder.QueryBuilderExceptionType: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.QueryBuilder.QueryBuilderHelper: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Data.FormatSpecifier: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Data.OperationPeriodType: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Data.DataHelper: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Data.DateTimeIntervalType: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Data.DateTimePeriod: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Data.DateTimePeriodType: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.LinqKit.ExpandableQuery`1: type has no family visible contructors.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.LinqKit.ExpandableQueryProvider`1: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.LinqKit.ExpressionExpander: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.LinqKit.Extensions: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.LinqKit.Linq: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.LinqKit.PredicateBuilder: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.LinqExtensions.LINQExtension: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.LambdaToSql.EntityMemberHelper: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.LambdaToSql.OrderByClause: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.LambdaToSql.SqlFunction: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.LambdaToSql.SqlOperator: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Enums.EntityJoinType: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Enums.EntityOperatorType: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Enums.EntityUnionType: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Diagnostics.LinqDebugData: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.DataBase.EntityConfiguration`1: method System.Data.Entity.ModelConfiguration.Configuration.Types.StructuralTypeConfiguration System.Data.Entity.ModelConfiguration.Configuration.StructuralTypeConfiguration`1.get_Configuration() unstubbable: method is abstract and could not be stubbed. Reason: method signature type is non-visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes) or subtype(EntityConfiguration`1 in assembly Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Bindings.BindingExecutor: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Bindings.BindingTarget: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Metadata.MetadataHelper: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Metadata.UniqueConstraintNullRule: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.UserSettings.Helpers.FilterSettingsHelper`1: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Services.Impl.FilterSettingsService: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Services.Impl.Watcher: type has no family visible contructors.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Helpers.ExpressionEntityHelper`1: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Helpers.StringsHelper: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Helpers.DisplayCaptionHelper: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Helpers.EnumHelper: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Helpers.FileHelper: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Helpers.LinqHelper: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Helpers.ViewSettingsHelper: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Helpers.DateTimePrecision: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Classes.DynamicField`1: type is a value type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Classes.DataValueItem`1: type Cwc.Common.Classes.DataValueItem`1 unstubbable: unsupported constraint type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Classes.DisplayCaptionItem`1: type Cwc.Common.Classes.DisplayCaptionItem`1 unstubbable: unsupported constraint type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Classes.ExpressionQueryResult: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Extensions.MappingExtensions: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Extensions.EnumExtensions: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Extensions.ReflectionExtensions: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Extensions.Monads.MaybeMonads: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Extensions.Data.StringExtensions: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Extensions.Data.EnumerableExtensions: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Extensions.Data.OtherExtensions: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for Cwc.Common.Concurrency.ConcurrencySolver`1: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate stub for <PrivateImplementationDetails>: type is sealed.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for <>f__AnonymousType0`2: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for <>f__AnonymousType1`3: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for <>f__AnonymousType2: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for <>f__AnonymousType3`2: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for <>f__AnonymousType4`2: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for <>f__AnonymousType5`2: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for <>f__AnonymousType6`2: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.IListDataItemProvider`2: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.CommonService: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.IEntityTIdentity`1: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DisplayCaptionSqlExpression`1+<>c__DisplayClass10_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.BaseEntity`1: type Cwc.Common.BaseEntity`1 unstubbable: unsupported constraint type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.CollectionsComparer`1+<>c__DisplayClass5_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataContext+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataContext+<>c__36`2: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataContext+<>c__DisplayClass53_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataContext+<>c__DisplayClass54_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataContext+<>c__DisplayClass58_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataContext+<>c__DisplayClass58_1: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataContext+<>c__DisplayClass59_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.EntityService`3+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.EntityService`3+<>c__DisplayClass13_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.EntityService`3+<>c__DisplayClass26_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.EntityService`3+<>c__DisplayClass26_1: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.EntityService`3+<>c__DisplayClass26_2: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.EntityService`3+<>c__DisplayClass28_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.EntityService`3+<>c__DisplayClass28_1: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.EntityService`3+<>c__DisplayClass29_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.EntityService`3+<>c__DisplayClass29_1: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.EntityService`3+<>c__DisplayClass41_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.EntityService`3+<>c__DisplayClass4_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.EntityService`3+<>c__DisplayClass8_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.EntityService`3+<>c__DisplayClass9_0`1: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.IEntity: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.IEntityService`3: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.IEntity`1: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ISupportID: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ISupportIsNew: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ISupportUniqueTechnicalID: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.JointType: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ILookupObjectExecutor: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.IActionSettings: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.IAction: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Weekday: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DeadlockPriority: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.SqlOptions+<>c__DisplayClass13_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.IWebPortalObjectService`2: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.WebPortalObjectService`2+<>c__DisplayClass7_0`1: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.IWebPortalObjectService`1: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.LogEventType: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.QueryHint: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.TableHint: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.SimpleMaskParser+AlphaNumericMaskPart: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.SimpleMaskParser+AplhabeticPart: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.SimpleMaskParser+CaseConvention: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.SimpleMaskParser+CurrencySymbolMaskPart: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.SimpleMaskParser+DateMaskPart: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.SimpleMaskParser+DateSeparatorMaskPart: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.SimpleMaskParser+LiteralMaskPart: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.SimpleMaskParser+MaskPart: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.SimpleMaskParser+NumbericMaskPart: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.SimpleMaskParser+SingleCharacterMaskPart: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.SimpleMaskParser+TimeSeparatorMaskPart: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ListBuilder`1+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ListBuilder`1+<>o__11: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.LockResult: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : skipping method !!1[,] Cwc.Common.MathHelper.ConvertMatrix(!!0[,] source), method !!1[,] Cwc.Common.MathHelper.ConvertMatrix(!!0[,] source) unstubbable: unsupported constraint type
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.MathHelper+<>c__DisplayClass2_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ExperimentalQueryBuilder`1+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ExperimentalQueryBuilder`1+<>c__DisplayClass48_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ExperimentalQueryBuilder`1+<>c__DisplayClass49_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ExperimentalQueryBuilder`1+<>c__DisplayClass50_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ExperimentalQueryBuilder`1+<>c__DisplayClass54_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ExperimentalQueryBuilder`1+<>o__52: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ExperimentalQueryBuilder`1+<>o__54: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.QueryBuilderExtension2+<>c__DisplayClass4_0`1: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.IFillObject: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.QueryBuilder`1+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.QueryBuilder`1+<>c__53`1: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.QueryBuilder`1+<>c__DisplayClass71_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.QueryBuilder`1+<>c__DisplayClass73_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.QueryBuilder`1+<>c__DisplayClass74_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.QueryBuilder`1+<>c__DisplayClass75_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.QueryBuilder`1+<>c__DisplayClass78_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.QueryBuilder`1+<>o__76: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.QueryBuilder`1+<>o__78: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.QueryBuilder`1+<>o__85: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.QueryBuilderExtension+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.QueryBuilderException+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.IRemoteServiceClient`1: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.AggregationType: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.AggregationExtendedType: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ArchivingAggregationType: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.IDataBaseObject: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.INullableValue: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : skipping method System.Nullable`1<!!0> Cwc.Common.DataBaseObject.GetNullablePropertyValue(System.String propertyName), method System.Nullable`1<!!0> Cwc.Common.DataBaseObject.GetNullablePropertyValue(System.String propertyName) unstubbable: unsupported constraint type
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : skipping method System.Nullable`1<!!0> Cwc.Common.DataBaseObject.GetNullablePropertyValue(System.String propertyName), method System.Nullable`1<!!0> Cwc.Common.DataBaseObject.GetNullablePropertyValue(System.String propertyName) unstubbable: unsupported constraint type
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : skipping method System.Void Cwc.Common.DataBaseObject.SetPropertyValue(System.Nullable`1<!!0> value, System.String propertyName), method System.Void Cwc.Common.DataBaseObject.SetPropertyValue(System.Nullable`1<!!0> value, System.String propertyName) unstubbable: unsupported constraint type
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : skipping method System.Void Cwc.Common.DataBaseObject.SetPropertyValue(System.Nullable`1<!!0> value, System.String propertyName), method System.Void Cwc.Common.DataBaseObject.SetPropertyValue(System.Nullable`1<!!0> value, System.String propertyName) unstubbable: unsupported constraint type
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataBaseObject+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataBaseObject+<>c__25`1: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataBaseObject+<>c__DisplayClass20_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataBaseObject+<>c__DisplayClass25_0`1: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.NullableValue`1: type Cwc.Common.NullableValue`1 unstubbable: unsupported constraint type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : skipping method System.Nullable`1<!!0> Cwc.Common.DataUtils.GetComboboxValue(System.Object value), method System.Nullable`1<!!0> Cwc.Common.DataUtils.GetComboboxValue(System.Object value) unstubbable: unsupported constraint type
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : skipping method System.Nullable`1<!!0> Cwc.Common.DataUtils.GetEnumNullable(System.Object value), method System.Nullable`1<!!0> Cwc.Common.DataUtils.GetEnumNullable(System.Object value) unstubbable: unsupported constraint type
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : skipping method System.Nullable`1<!!0> Cwc.Common.DataUtils.GetNullableRowValue(System.Data.DataRow row, System.String columnName), method System.Nullable`1<!!0> Cwc.Common.DataUtils.GetNullableRowValue(System.Data.DataRow row, System.String columnName) unstubbable: unsupported constraint type
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : skipping method System.Nullable`1<!!0> Cwc.Common.DataUtils.GetNullableValue(System.Object value), method System.Nullable`1<!!0> Cwc.Common.DataUtils.GetNullableValue(System.Object value) unstubbable: unsupported constraint type
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataUtils+<>c__57`1: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataUtils+<>c__DisplayClass55_0`1: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataUtils+<>c__DisplayClass57_0`1: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ClassInfo+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ClassInfo+<>c__DisplayClass35_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.PropertyInfo+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.LocksService: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ILocksService: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.WhereConditions+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.WhereConditions+<>c__DisplayClass16_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.WhereConditions+<>c__DisplayClass17_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ConfigurationClient: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ConfigurationService: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.IConfigurationService: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.AttributeConfigurationService: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.IAttributeConfigurationService: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ILogService: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.LogService: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ViewSettingService: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ViewSettingHelper+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ViewSettingHelper+<>c__DisplayClass8_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ViewSettingHelper+<>c__DisplayClass9_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ISupportExportMapping: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ThreadWrapper`1+WorkerActionHandler: type is a delegate.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ThreadWrapper`1+WorkerThreadHandler: type is a delegate.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ComparisonAttributesByNumber: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.AttributeInitializationType: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ICommonUserSettingsEx: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.UserSettingsHelper: type is obsolete.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : skipping method Cwc.Common.Result Cwc.Common.DataBaseHelper.CheckUniqueConstraintsCollection(!!0 entity, !!0[] entities), method Cwc.Common.Result Cwc.Common.DataBaseHelper.CheckUniqueConstraintsCollection(!!0 entity, !!0[] entities) unstubbable: unsupported constraint type
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : skipping method System.Nullable`1<!!0> Cwc.Common.DataBaseHelper.ExecuteScalar(System.String sql, System.Data.SqlClient.SqlParameter[] sqlParams, Cwc.Common.DataBaseParams dbParams), method System.Nullable`1<!!0> Cwc.Common.DataBaseHelper.ExecuteScalar(System.String sql, System.Data.SqlClient.SqlParameter[] sqlParams, Cwc.Common.DataBaseParams dbParams) unstubbable: unsupported constraint type
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : skipping method System.Nullable`1<!!1> Cwc.Common.DataBaseHelper.ExecuteScalarField(System.String fieldName, System.String wherePart, System.Data.SqlClient.SqlParameter[] sqlParams, Cwc.Common.DataBaseParams dbParams), method System.Nullable`1<!!1> Cwc.Common.DataBaseHelper.ExecuteScalarField(System.String fieldName, System.String wherePart, System.Data.SqlClient.SqlParameter[] sqlParams, Cwc.Common.DataBaseParams dbParams) unstubbable: unsupported constraint type
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataBaseHelper+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataBaseHelper+<>c__110`2: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataBaseHelper+<>c__152`1: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataBaseHelper+<>c__DisplayClass109_0`1: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataBaseHelper+<>c__DisplayClass110_0`2: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataBaseHelper+<>c__DisplayClass152_0`1: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataBaseHelper+<>c__DisplayClass84_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataBaseHelper+<>c__DisplayClass84_1: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataBaseHelper+CommandType: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataBaseHelper+Reference: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataBaseHelper+ReferenceColumn: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataBaseHelper+ResultType: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.IAttribute: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.AggregationFunction: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Result+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.TypeAttribute: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.AttributeSortOrder: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ViewSetting+<>c__DisplayClass88_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Localization.ILocalizationFacadeProvider: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Localization.ILocalizationFacade: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Localization.LocalizationFacadeProvider: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Validation.DateTimePropertyValidator: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Validation.IntegralNumericPropertyValidator: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Validation.NonintegralNumericPropertyValidator: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Validation.PropertyValidator`1: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Validation.StringPropertyValidator: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Upgrade.IUpgradeAction: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Upgrade.SQLUpgradeAction+<>c__DisplayClass1_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Upgrade.UpgradeHelper+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Upgrade.UpgradeHelper+<>c__DisplayClass16_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Upgrade.UpgradeHelper+<>c__DisplayClass18_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Upgrade.UpgradeHelper+<>c__DisplayClass19_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Upgrade.UpgradeHelper+UpgradeResult: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Sync.IFileSyncService: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Sync.ISyncFacadeProvider: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Sync.ISyncFacade: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Sync.SyncAction: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Service.IEOMExportService: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Service.IResourceBindActionService`1: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Service.ClassDescriptionService.ClassDescriptionRepository: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Recordable.IChangesRecorder: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.QueryBuilder.AliasInfo: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.QueryBuilder.GenericHelper: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.QueryBuilder.InvokeGeneric: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.QueryBuilder.LinkInfo: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.QueryBuilder.MessageAttribute: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.QueryBuilder.QueryBuilderExceptionType: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.QueryBuilder.QueryBuilderHelper: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Data.OperationPeriodType: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Data.DataHelper+<>c__DisplayClass24_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Data.DateTimeIntervalType: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Data.DateTimePeriodType: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.CopyHelper.CopyHelper+<>c__DisplayClass7_0`1: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.LinqKit.ExpandableQueryProvider`1: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.LinqKit.ExpressionExpander: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.LinqKit.Extensions+<>c__DisplayClass13_0`2: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.LambdaToSql.EntityFrom`1+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.LambdaToSql.EntityFrom`1+<>c__DisplayClass36_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.LambdaToSql.EntityFrom`1+<>o__30: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.LambdaToSql.EntityOperator`1+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.LambdaToSql.EntityOperator`1+<>c__18`2: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.LambdaToSql.EntityOperator`1+<>c__24`2: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.LambdaToSql.EntityOperator`1+<>c__DisplayClass76_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.LambdaToSql.IEntityAliasSource: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.LambdaToSql.IEntityLink: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.LambdaToSql.IEntityLink`1: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.LambdaToSql.IEntityQueryable: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.LambdaToSql.OrderByClause: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.LambdaToSql.EntityQuery+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.LambdaToSql.ISqlExpression: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Enums.EntityJoinType: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Enums.EntityOperatorType: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Enums.EntityUnionType: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Diagnostics.LinqDebugData+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.DataBase.ILookupEntityExecutor`2: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Metadata.FilterReferenceAttribute+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Metadata.MetadataHelper+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Metadata.MetadataHelper+<>c__DisplayClass11_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Metadata.MetadataHelper+<>c__DisplayClass13_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Metadata.MetadataHelper+<>c__DisplayClass18_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Metadata.MetadataHelper+<>c__DisplayClass2_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Metadata.MetadataHelper+<>c__DisplayClass32_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Metadata.MetadataHelper+<>c__DisplayClass33_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Metadata.MetadataHelper+<>c__DisplayClass36_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Metadata.TypeNameConverter+<>c__DisplayClass3_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Metadata.UniqueConstraintNullRule: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.UserSettings.Helpers.FilterSettingsHelper`1+<>c__DisplayClass1_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.UserSettings.Helpers.FilterSettingsHelper`1+<>c__DisplayClass2_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.UserSettings.FilterSettings.IMultiSelectDataSource`1: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Services.IFilterSettingsService: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Services.ILogger: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Services.Impl.FilterSettingsService: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.ICommon.IListDataItem`1: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Interfaces.ISearchDateTime: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Helpers.ViewSettingsHelper+<>c__DisplayClass0_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Helpers.DateTimePrecision: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Helpers.FileHtmlLogger+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Helpers.FileHtmlLogger+LogMessageColor: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Classes.DynamicField`1: type Cwc.Common.Classes.DynamicField`1 unstubbable: unsupported constraint type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Classes.DataValueItem`1: type Cwc.Common.Classes.DataValueItem`1 unstubbable: unsupported constraint type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Classes.DisplayCaptionItem`1: type Cwc.Common.Classes.DisplayCaptionItem`1 unstubbable: unsupported constraint type.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Classes.ExpressionQueryResult: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : skipping method !!0 Cwc.Common.Extensions.EnumExtensions.Next(!!0 src), method !!0 Cwc.Common.Extensions.EnumExtensions.Next(!!0 src) unstubbable: unsupported constraint type
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : skipping method !!0 Cwc.Common.Extensions.EnumExtensions.Prev(!!0 src), method !!0 Cwc.Common.Extensions.EnumExtensions.Prev(!!0 src) unstubbable: unsupported constraint type
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Extensions.ReflectionExtensions+<>c__DisplayClass6_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Extensions.ReflectionExtensions+<>c__DisplayClass7_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : skipping method !!0 Cwc.Common.Extensions.Monads.MaybeMonads.SafeValue(System.Nullable`1<!!0> context), method !!0 Cwc.Common.Extensions.Monads.MaybeMonads.SafeValue(System.Nullable`1<!!0> context) unstubbable: unsupported constraint type
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Extensions.Data.StringExtensions+<AllIndexesOf>d__5: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Extensions.Data.EnumerableExtensions+<Split>d__4`1: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Extensions.Data.OtherExtensions+<>c__1`1: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Extensions.Data.OtherExtensions+<>c__DisplayClass0_0: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Builders.ConditionQueryBuilder+<>c: type is not supported because of internal limitations.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Builders.ConditionQueryBuilder+Condition: type is not visible to exported or assembly(Cwc.Common.1.0.0.0.Fakes).
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Builders.ConditionQueryBuilder+SqlOperator: type is an enum.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for Cwc.Common.Actions.ICustomCommandColumnAction: type is an interface.
+E:\TFS\Test_5.03\v5.03\CWC.AutoTests\Fakes\Cwc.Common.fakes : warning : Cannot generate shim for <PrivateImplementationDetails>: type is not supported because of internal limitations.

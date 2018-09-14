@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <dai_line act="0" res="0" desc="Added successfully.">
+    <a_time>1111</a_time>
+    <a_time_a>111131</a_time_a>
+    <amt_col_p>0</amt_col_p>
+    <amt_col_a>0</amt_col_a>
+    <amt_del>0</amt_del>
+    <amt_del_a>0</amt_del_a>
+    <dai_date>2018-01-19</dai_date>
+    <day_nr>1</day_nr>
+    <inv_lg>false</inv_lg>
+    <loc_nr>3000000026</loc_nr>
+    <lcrep_nr>0</lcrep_nr>
+    <ord_nr>0</ord_nr>
+    <s_time>0005</s_time>
+    <s_time_a>0000</s_time_a>
+    <amt_col_o>0</amt_col_o>
+    <amt_col_c>0</amt_col_c>
+    <d_time>0805</d_time>
+    <d_time_a>111133</d_time_a>
+    <reason_cd>0</reason_cd>
+    <dai_date_a>2018-01-19</dai_date_a>
+    <mast_nr_next>0</mast_nr_next>
+    <action_cd>0</action_cd>
+    <reason_cd_mc_p>0</reason_cd_mc_p>
+    <loc_cd_typed>false</loc_cd_typed>
+    <branch_cd>LOS</branch_cd>
+    <mast_cd>JHB04</mast_cd>
+    <CitIdentifier>test</CitIdentifier>
+  </dai_line>
+</DocumentElement>

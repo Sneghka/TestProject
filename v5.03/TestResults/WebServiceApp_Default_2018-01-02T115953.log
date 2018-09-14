@@ -1,0 +1,35 @@
+﻿2018-01-02T11:59:35.2469992+02:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2018-01-02T11:59:35.4970468+02:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2018-01-02T11:59:35.4990474+02:00;VSTestExecutionThread;Info;SpecRun: running tests in E:\TFS\Test_5.03\v5.03\CWC.AutoTests\bin\Debug\CWC.AutoTests.dll
+2018-01-02T11:59:35.4990474+02:00;VSTestExecutionThread;Info;Profile: Default
+2018-01-02T11:59:43.9999439+02:00;VSTestExecutionThread;Info;Discovering target: Default
+2018-01-02T11:59:44.0009421+02:00;VSTestExecutionThread;Info;Discovering tests from assembly: E:\TFS\Test_5.03\v5.03\CWC.AutoTests\bin\Debug\CWC.AutoTests.dll
+2018-01-02T11:59:46.0804752+02:00;VSTestExecutionThread;Info;Log file: file:///E:\TFS\Test_5.03\v5.03\TestResults\CWC.AutoTests_Default_2018-01-02T115935.log
+2018-01-02T11:59:46.0884758+02:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2018-01-02T11:59:46.0884758+02:00;VSTestExecutionThread;Info;SpecRun: running tests in E:\TFS\Test_5.03\v5.03\SpecFlow.Automation.Backend\bin\Debug\Specflow.Automation.Backend.dll
+2018-01-02T11:59:46.0894759+02:00;VSTestExecutionThread;Info;Profile: Default
+2018-01-02T11:59:52.0951128+02:00;VSTestExecutionThread;Info;Discovering target: Default
+2018-01-02T11:59:53.0964964+02:00;VSTestExecutionThread;Info;Log file: file:///E:\TFS\Test_5.03\v5.03\TestResults\CWC.AutoTests_Default_2018-01-02T115946.log
+2018-01-02T11:59:53.0974968+02:00;VSTestExecutionThread;Info;SpecRun: not SpecRun assembly - skip: E:\TFS\Test_5.03\v5.03\SpecFlow.Automation.UI\bin\Debug\SpecFlow.Automation.UI.dll
+2018-01-02T11:59:53.1040028+02:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2018-01-02T11:59:53.1045029+02:00;VSTestExecutionThread;Info;SpecRun: running tests in E:\TFS\Test_5.03\v5.03\WebServiceApp\bin\WebServiceApp.dll
+2018-01-02T11:59:53.1050029+02:00;VSTestExecutionThread;Info;Profile: Default
+2018-01-02T12:00:07.1087516+02:00;Thread#17;Info;Discovering target: Default
+2018-01-02T12:00:07.1103529+02:00;Thread#17;Info;Discovering tests from assembly: E:\TFS\Test_5.03\v5.03\WebServiceApp\bin\WebServiceApp.dll
+Appdomain Disposed
+Test Suite Dump
+#0: WebServiceApp/Default - 
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 0
+Succeeded: 0
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 0

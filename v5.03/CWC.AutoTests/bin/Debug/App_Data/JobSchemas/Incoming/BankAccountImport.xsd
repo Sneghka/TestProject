@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="BankAccountImport" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BankAccountImport">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompanyReferenceNumber" type="xs:string" minOccurs="1" />
+              <xs:element name="BankAccountNumber" type="xs:string" minOccurs="1" />
+              <xs:element name="BankAccountHolder" type="xs:string" minOccurs="1" />
+            </xs:sequence>
+          </xs:complexType>
+          <xs:unique name="IDX_BankAccountImport" msdata:PrimaryKey="true">
+            <xs:selector xpath=".//BankAccountImport" />
+            <xs:field xpath="CompanyReferenceNumber" />
+            <xs:field xpath="BankAccountNumber" />
+            <xs:field xpath="BankAccountHolder" />
+          </xs:unique>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

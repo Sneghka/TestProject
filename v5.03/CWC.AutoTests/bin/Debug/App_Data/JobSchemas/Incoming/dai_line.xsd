@@ -1,0 +1,56 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="dai_line" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dai_line">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="a_time" type="xs:string" minOccurs="0" />
+              <xs:element name="a_time_a" type="xs:string" minOccurs="0" />
+              <xs:element name="amt_col_p" type="xs:int" minOccurs="0" />
+              <xs:element name="amt_col_a" type="xs:int" minOccurs="0" />
+              <xs:element name="amt_del" type="xs:int" minOccurs="0" />
+              <xs:element name="amt_del_a" type="xs:int" minOccurs="0" />
+              <xs:element name="dai_date" msprop:Type="DateTime" type="xs:string" minOccurs="0" />
+			  <xs:element name="day_nr" type="xs:int" minOccurs="0" />
+			  <xs:element name="inv_lg" type="xs:boolean" minOccurs="0" />
+			  <xs:element name="loc_nr" type="xs:decimal" minOccurs="0" />
+			  <xs:element name="lcrep_nr" type="xs:decimal" minOccurs="0" />
+			  <xs:element name="ord_nr" type="xs:decimal" minOccurs="0" />
+			  <xs:element name="s_time" type="xs:string" minOccurs="0" />
+			  <xs:element name="s_time_a" type="xs:string" minOccurs="0" />
+			  <xs:element name="amt_col_o" type="xs:int" minOccurs="0" />
+			  <xs:element name="amt_col_c" type="xs:int" minOccurs="0" />
+			  <xs:element name="d_time" type="xs:string" minOccurs="0" />
+			  <xs:element name="d_time_a" type="xs:string" minOccurs="0" />
+			  <xs:element name="reason_cd" type="xs:int" minOccurs="0" />
+			  <xs:element name="id_scan" type="xs:string" minOccurs="0" />
+			  <xs:element name="dai_date_a" msprop:Type="DateTime" type="xs:string" minOccurs="0" />
+              <xs:element name="user_cd_next" type="xs:string" minOccurs="0" />
+              <xs:element name="dai_date_next" msprop:Type="DateTime" type="xs:string" minOccurs="0" />
+              <xs:element name="mast_nr_next" type="xs:int" minOccurs="0" />
+              <xs:element name="action_cd" type="xs:int" minOccurs="0" />
+              <xs:element name="reason_cd_mc_p" type="xs:int" minOccurs="0" />
+              <xs:element name="loc_cd_typed" type="xs:boolean" minOccurs="0" />
+              <xs:element name="contact_name" type="xs:string" minOccurs="0" />
+              <xs:element name="contact_time" type="xs:string" minOccurs="0" />
+              <xs:element name="branch_cd" type="xs:string" minOccurs="0" />
+              <xs:element name="mast_cd" type="xs:string" minOccurs="0" />
+              <xs:element name="ref_loc_nr" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+			  <xs:attribute name="act" type="xs:int" />
+		  </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+	  <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+		  <xs:selector xpath=".//dai_line" />
+		  <xs:field xpath="a_time" />
+		  <xs:field xpath="dai_date" />
+		  <xs:field xpath="dai_date_a" />
+		  <xs:field xpath="day_nr" />
+		  <xs:field xpath="mast_cd" />
+	  </xs:unique>
+  </xs:element>
+</xs:schema>

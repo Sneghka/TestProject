@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="loc_serv">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="loc_nr" type="xs:decimal" msdata:Ordinal="1" />
+              <xs:element name="day_nr" type="xs:int" msdata:Ordinal="2" />
+              <xs:element name="mast_nr" type="xs:int" msdata:Ordinal="3" />
+              <xs:element name="bgtyp_nr" type="xs:int" msdata:Ordinal="4" />
+              <xs:element name="serv_type" type="xs:string" msdata:Ordinal="5" />
+              <xs:element name="to_loc_nr" type="xs:decimal" msdata:Ordinal="6" />
+              <xs:element name="a_time" type="xs:string" msdata:Ordinal="7" />
+              <xs:element name="WP_mast_cd" msdata:Caption="mast_nr" type="xs:string" msdata:Ordinal="8" />
+              <xs:element name="revenue" type="xs:decimal" minOccurs="0" msdata:Ordinal="9" />
+              <xs:element name="msg_nr" type="xs:int" minOccurs="0" msdata:Ordinal="10" />
+              <xs:element name="s_time" type="xs:string" minOccurs="0" msdata:Ordinal="11" />
+              <xs:element name="loc_timew1" type="xs:string" minOccurs="0" msdata:Ordinal="12" />
+              <xs:element name="loc_timew2" type="xs:string" minOccurs="0" msdata:Ordinal="13" />
+              <xs:element name="max_val" type="xs:decimal" minOccurs="0" msdata:Ordinal="14" />
+              <xs:element name="contr_nr" type="xs:string" msdata:Ordinal="15" />
+              <xs:element name="serv_nr" type="xs:int" minOccurs="0" msdata:Ordinal="16" />
+              <xs:element name="initiator" type="xs:boolean" minOccurs="0" msdata:Ordinal="17" />
+              <xs:element name="import_date" msprop:Type="DateTime" type="xs:string" minOccurs="0" msdata:Ordinal="18" />
+              <xs:element name="amt" type="xs:decimal" minOccurs="0" msdata:Ordinal="19" />
+              <xs:element name="frequency" type="xs:int" minOccurs="0" msdata:Ordinal="20" />
+              <xs:element name="freq_week" type="xs:int" minOccurs="0" msdata:Ordinal="21" />
+              <xs:element name="freq_recur" type="xs:int" minOccurs="0" msdata:Ordinal="22" />
+              <xs:element name="freq_month" type="xs:int" minOccurs="0" msdata:Ordinal="23" />
+              <xs:element name="startdate" msprop:Type="DateTime" type="xs:string" minOccurs="0" msdata:Ordinal="24" />
+              <xs:element name="enddate" msprop:Type="DateTime" type="xs:string" minOccurs="0" msdata:Ordinal="25" />
+              <xs:element name="branch_nr" type="xs:int" minOccurs="0" msdata:Ordinal="26" />
+              <xs:element name="WP_ServiceTypeCode" type="xs:string" minOccurs="0" msdata:Ordinal="27" />
+            </xs:sequence>
+            <xs:attribute name="act" type="xs:int" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//loc_serv" />
+      <xs:field xpath="a_time" />
+      <xs:field xpath="bgtyp_nr" />
+      <xs:field xpath="contr_nr" />
+      <xs:field xpath="day_nr" />
+      <xs:field xpath="loc_nr" />
+      <xs:field xpath="mast_nr" />
+      <xs:field xpath="serv_type" />
+      <xs:field xpath="to_loc_nr" />
+      <xs:field xpath="WP_mast_cd" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
